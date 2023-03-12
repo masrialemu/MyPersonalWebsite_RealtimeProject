@@ -1,0 +1,33 @@
+.all{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.header{
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+
+}
+.imgs{
+    display: flex;
+    overflow: hidden;
+    width: 50vh;
+}
+.body{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 81.2vh;
+}
+.footer{
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}

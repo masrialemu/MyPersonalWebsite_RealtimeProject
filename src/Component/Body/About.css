@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.About{
+    width: 100%;
+    height: auto;
+}
+
+.About .about h3{
+    display: flex;
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgb(90, 9, 9);
+    justify-content: center;
+}
+.About .about span{
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+.abouts{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.abouts .list{
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 70%;
+    height: auto;
+   /* border: 2px solid black; */
+}
+.about .list .imgs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .list img:hover{
+    transform: scale(1.03);
+}
+.about .list img{
+    transition: 0.7s;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+ background-color: aliceblue;
+    border: 2px solid gray;
+}
+.about .list{
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about .list .det{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: center;
+ 
+}
+.about .list .det .Text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about .list .det .text{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.about .list .more{
+    visibility: hidden;
+}
+.about .list .det .btn{
+    display: flex;
+}
+.about .list .det .btn button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.about .list .det .btn button{
+    cursor: pointer;
+    background-color: #082032;
+    color: white;
+    border: none;
+    transition: 0.7s;
+    width: 130px;
+    height: 40px;
+    margin: 10px;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1397px){
+    .about .list p{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1350px){
+    .about .list p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 1248px){
+    .about .list p{
+        font-size: 14px;
+    }
+    .about .list .det .btn button{
+        width: 120px;
+        height: 38px;
+        margin: 10px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 1204px){
+    .about .list p{
+        font-size: 13px;
+    }
+    .about .list .det .btn button{
+        width: 100px;
+        height: 35px;
+        margin: 8px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1040px){
+   
+    .about .list p{
+        font-size: 12px;
+    }
+    .about .list .det .btn button{
+        width: 90px;
+        height: 33px;
+        margin: 6px;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 978px){
+   
+    
+    .about .list .imgs{
+        margin-top: 10px;
+    }
+    .about .list .det{
+        margin-top: 20px;
+    }
+    .about .list .imgs{
+        display: flex;
+        justify-content: center;
+    }
+    .about .list{
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .about .list p{
+        font-size: 12px;
+    }
+    .about .list .det .btn button{
+        width: 90px;
+        height: 33px;
+        margin: 6px;
+        font-size: 13px;
+    }
+    .about .list .det p{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 633px){
+    .about .list .more{
+        visibility: visible;
+    }
+}
+@media only screen and (max-width: 600px){
+    /* .about .mores{
+        background-color: brown;
+        width: 100%;
+        height: 40px;
+      
+    } */
+    .about .list .Text{
+        /* height: 500px; */
+    }
+  .about .list .text{
+    /* height: 380px; */
+ 
+  }
+  .about .list .more{
+    visibility: visible;
+}
+   .list .more{
+    cursor: pointer;
+    color: #082032;
+    visibility: visible;
+    
+   }
+
+    .about .list .imgs{
+        margin-top: 10px;
+    }
+    .about .list .det p{
+        font-size: 17px;
+    }
+    .about .list img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 448px){
+    .about .list .imgs{
+        margin-top: 10px;
+    }
+    .about .list .det p{
+        font-size: 15px;
+    }
+    .about .list img{
+        width: 270px;
+        height: 270px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .about .list .imgs{
+        margin-top: 7px;
+    }
+    .about .list .det p{
+        font-size: 13px;
+    }
+    .about .list img{
+        width: 250px;
+        height: 250px;
+    }
+    .about .list .det .btn button{
+        width: 57px;
+        height: 30px;
+        margin: 5px;
+        font-size: 9px;
+    }
+}
+
+/* 
+
+
+
+
+
+
+
+
+/* 
+.about .Text button:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+.about .Text button{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #082032;
+    color: gainsboro;
+    font-weight: 600;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s;
+  border: none;
+  border: 1px solid white;
+  margin: 10px;
+ 
+
+}
+.about .hide h1{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 50px;
+    color: #082032;
+}
+.about .list .det p{
+    width: 500px;
+    height: auto;
+    font-size: 16px;
+    font-weight: 600;
+}
+.about .list .det .btn{
+    display: flex;
+    justify-content: center
+} */
