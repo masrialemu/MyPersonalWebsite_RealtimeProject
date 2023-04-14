@@ -5,6 +5,7 @@
 .Dt{
     width: 100%;
     height: auto;
+    font-weight: 600;
 }
 .Dt .list{
     height: auto;
@@ -76,6 +77,7 @@
        flex-wrap: wrap;
     }
     .Dt .lists .ff{
+        
         display: flex;
         flex-direction: column;
     }

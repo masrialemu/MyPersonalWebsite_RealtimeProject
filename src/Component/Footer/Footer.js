@@ -20,20 +20,22 @@ function Footer() {
            <li><a href="#contact">contact</a></li>
            </ul>
            <div className="line">
-           <h1><AiFillLinkedin/></h1>
-           <h1><AiFillGithub/></h1>
-           <h1><AiFillFacebook/></h1>
-           <h1><FaTelegram/></h1>
-           <h1><AiOutlineTwitter/></h1>
-           <h1><AiOutlineInstagram/></h1>
-           </div>
+           <h1><a href="https://www.linkedin.com/in/masresha-alemu-851241232" target="_blank" ><AiFillLinkedin/></a></h1>
+           <h1><a href="https://github.com/masrialemu?tab=repositories" target="_blank" ><AiFillGithub/></a></h1>
+    
+
+           <h1><a href="https://www.facebook.com/profile.php?id=100013708891539" target="_blank" ><AiFillFacebook/></a></h1>
+           <h1><a href="https://t.me/Masri404" target="_blank" ><FaTelegram/></a></h1>
+          
+           <h1><a href="https://www.MasriAlemu?s=01" target="_blank" ><AiOutlineTwitter/></a></h1>
+           <h1><a href="#" target="_blank" ><AiOutlineInstagram/></a></h1>
            
            </div>
            <p className="copy">copyright {new Date().getFullYear()}</p>
          </div>
         </div>
     </div>
-    
+    </div>
   )
 }
 

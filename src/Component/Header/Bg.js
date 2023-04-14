@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import IMG1 from '../../Img/andras-vas-Bd7gNnWJBkU-unsplash.jpg'
 import IMG2 from '../../Img/daniel-korpai-HyTwtsk8XqA-unsplash.jpg'
 import IMG3 from '../../Img/steven-binotto-V3Q5Ens9vh0-unsplash.jpg'
@@ -8,12 +8,18 @@ import IMG6 from '../../Img/best.jpg'
 import { AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
 import './Bg.css'
 import Data from '../../Data/List'
+import Typewriter from 'typewriter-effect';
 
-function Bg({n1,n2,n3,n4}) {
-
+function Bg({e}) {
+  const elRef = useRef(null);
 const [use,setUse]=useState(Data)
 const [num,setNum]=useState(0)
+const el = React.useRef(null);
+
 let time
+
+  
+
 useEffect(()=>{
   time=setInterval(()=>{
      if(num>=use.length-1){
@@ -55,10 +61,20 @@ const Background={backgroundImage:`url(${use[num].img})`  }
         </div>
         <div className="center">
         <div className="title">
-      <h3>{n1}</h3>
-      <h1><span><span style={{color:"white"}}></span>{n2}</span></h1>  
-      <h3>{n3}</h3>
-      <span className='sp'><h3 style={{color:'white'}}>{n4}</h3></span>
+      <h3>{e.name.n1}</h3>
+      <h1><span><span style={{color:"white"}}></span>
+      <h6>
+      <Typewriter
+      options={{
+        strings: ['Masresha Alemu', 'MERN Stack developer', 'my expertise in','html','css','javascript','react.js','node.js','express.js','mongoose','mysqil','php','bootstrap','python','firebase','reactnative'],
+        autoStart: true,
+        loop: true,
+        }}
+       /> 
+      </h6>
+      </span></h1>  
+      <h3>{e.name.n3}</h3>
+      <span className='sp'><h3 style={{color:'white'}}>{e.name.n4}</h3></span>
       <div className="let">
       <button>let's Contact</button>
       </div>

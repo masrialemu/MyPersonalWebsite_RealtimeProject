@@ -5,6 +5,7 @@
 .About{
     width: 100%;
     height: auto;
+    font-weight: 600;
 }
 
 .About .about h3{
@@ -35,6 +36,9 @@
     width: 70%;
     height: auto;
    /* border: 2px solid black; */
+}
+.abouts .mr{
+    visibility: hidden;
 }
 .about .list .imgs{
   display: flex;
@@ -102,20 +106,52 @@
     margin: 10px;
     font-size: 17px;
 }
-
+.about .list p{
+    text-align: justify;
+}
 @media only screen and (max-width: 1397px){
+    .abouts .mr input{
+        width: 100px;
+        cursor: pointer;
+        height: 30px;
+        background-color: aliceblue;
+        color: black;
+    }
     .about .list p{
-        font-size: 16px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .abouts .text{
+        margin-top: 20px;
+
+        top: 30px;
+    }
+    .abouts .mr{
+        visibility: visible;
+           
+    }
+    .about .list p{
+        font-size: 13.5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 30;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }
 @media only screen and (max-width: 1350px){
     .about .list p{
-        font-size: 15px;
+        font-size: 16px;
+    }
+    .abouts .text{
+        margin-top: 20px;
     }
 }
 @media only screen and (max-width: 1248px){
     .about .list p{
-        font-size: 14px;
+        margin-top: 20px;
+    }
+    .about .list p{
+        font-size: 15.8px;
     }
     .about .list .det .btn button{
         width: 120px;
@@ -126,7 +162,7 @@
 }
 @media only screen and (max-width: 1204px){
     .about .list p{
-        font-size: 13px;
+        font-size: 15.6px;
     }
     .about .list .det .btn button{
         width: 100px;
@@ -135,10 +171,27 @@
         font-size: 14px;
     }
 }
-@media only screen and (max-width: 1040px){
-   
+@media only screen and (max-width: 1145px){
     .about .list p{
-        font-size: 12px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 1102px){
+    .about .list p{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1040px){
+    .abouts .mr{
+        visibility: visible;
+           
+    }
+    .about .list p{
+        font-size: 13.5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 30;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
     .about .list .det .btn button{
         width: 90px;
@@ -146,15 +199,32 @@
         margin: 6px;
         font-size: 13px;
     }
+    .abouts .mr input{
+        width: 100px;
+        cursor: pointer;
+        height: 30px;
+        background-color: aliceblue;
+        color: black;
+    }
 }
 @media only screen and (max-width: 978px){
-   
     
+    .abouts .mr{
+        visibility: visible;
+           
+    }
+    .abouts .mr input{
+        width: 100px;
+        cursor: pointer;
+        height: 30px;
+        background-color: aliceblue;
+        color: black;
+    }
     .about .list .imgs{
         margin-top: 10px;
     }
     .about .list .det{
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .about .list .imgs{
         display: flex;
@@ -165,18 +235,33 @@
         justify-content: center
     }
     .about .list p{
-        font-size: 12px;
+        font-size: 13px;
+        display: -webkit-box;
+        /* -webkit-line-clamp: 8; */
+        overflow: hidden;
     }
     .about .list .det .btn button{
-        width: 90px;
-        height: 33px;
-        margin: 6px;
-        font-size: 13px;
+        width: 110px;
+        height: 40px;
+        margin: 10px;
+        font-size: 14px;
     }
     .about .list .det p{
         font-size: 16px;
+        
+    }
+}@media only screen and (max-width: 830px){
+    .about .list .det p{
+        width: 800px;
+        
     }
 }
+@media only screen and (max-width: 653px){
+   .abouts .text{
+    margin-top: 20px;
+   }
+}
+
 @media only screen and (max-width: 633px){
     .about .list .more{
         visibility: visible;
@@ -189,6 +274,13 @@
         height: 40px;
       
     } */
+
+    .about .list .det .btn button{
+        width: 100px;
+        height: 40px;
+        margin: 5px;
+        font-size: 13px;
+    }
     .about .list .Text{
         /* height: 500px; */
     }
@@ -211,18 +303,27 @@
     }
     .about .list .det p{
         font-size: 17px;
+        width: 500px;
     }
     .about .list img{
         width: 300px;
         height: 300px;
     }
 }
+
 @media only screen and (max-width: 448px){
+    .about .list .det .btn button{
+        width: 90px;
+        height: 40px;
+        margin: 5px;
+        font-size: 12px;
+    }
     .about .list .imgs{
         margin-top: 10px;
     }
     .about .list .det p{
         font-size: 15px;
+        width: 400px;
     }
     .about .list img{
         width: 270px;
@@ -233,18 +334,22 @@
     .about .list .imgs{
         margin-top: 7px;
     }
+    .abouts p{
+       
+    }
     .about .list .det p{
-        font-size: 13px;
+        font-size: 14px;
+        
     }
     .about .list img{
         width: 250px;
         height: 250px;
     }
     .about .list .det .btn button{
-        width: 57px;
-        height: 30px;
+        width: 80px;
+        height: 40px;
         margin: 5px;
-        font-size: 9px;
+        font-size: 11px;
     }
 }
 

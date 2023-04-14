@@ -10,10 +10,10 @@ import Home from './Main/Home'
 
 function App() {
   return (
-    <Switch>
+    <Switch >
      <Route path={'/'} exact><Home/></Route>
-     <Route path={'/login'}><Login/></Route>
-     <Route path={'/dashbord'}><Dash/></Route>
+     <Route path={'/'}><Login/></Route>
+     <Route path={'/'}><Dash/></Route>
     </Switch>
   )
 }

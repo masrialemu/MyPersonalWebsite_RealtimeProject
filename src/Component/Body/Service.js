@@ -24,7 +24,7 @@ function Service() {
    
   }
   const style={
-    right: `${state*370}px`
+    right: `${state*307}px`
   }
   return (
     <div className='service' id='service'>
@@ -45,6 +45,7 @@ function Service() {
          <p>
          {e.desc}
          </p>
+        
         </div>
      </div>)
     }
