@@ -10,7 +10,7 @@ import Home from './Main/Home'
 
 function App() {
   return (
-    <Switch >
+    <Switch>
      <Route path={'/'} exact><Home/></Route>
      <Route path={'/'}><Login/></Route>
      <Route path={'/'}><Dash/></Route>
