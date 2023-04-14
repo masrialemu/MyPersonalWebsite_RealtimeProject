@@ -105,7 +105,7 @@ function Contact() {
         color="#36d7b7"
         loading={loading}
         cssOverride={override}
-        size={35}
+        size={13}
         aria-label="Loading Spinner"
         data-testid="loader"
         />
