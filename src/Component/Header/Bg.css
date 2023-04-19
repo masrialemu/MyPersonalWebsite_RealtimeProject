@@ -61,7 +61,7 @@
 .bgs .center .title{
     width: 400px;
     height: 250px;
-    border: 3px solid gray;
+    /* border: 3px solid gray; */
     backdrop-filter: blur(5px);
     margin-top: 13%;
     color: white;
@@ -128,30 +128,42 @@
 
 @media only screen and (max-width: 800px){
     .bgs .center .title{
-        width: 350px;
+        width: 400px;
         height: 250px;
+        border: none;
+        backdrop-filter: blur(5px);
+        margin-top: 13%;
+        color: white;
     }
+    .bgs .center .title h3{
+       font-size: 25px;
+    
+    }
+    .bgs .center .title h6{
+        font-size: 25px;
+     
+     }
     .bgs .center .title button{
-        width: 130px;
-        height: 50px;
-        font-size: 16px;
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 600px){
     .bgs .center .title{
-        width: 300px;
-        height: 250px;
+        width: 350px;
+        height: 300px;
     }
     .bgs .center .title h3{
-        font-size: 17px;
+        font-size: 25px;
         margin: 10px;
     
     }
 
     .bgs .center .title button{
-        width: 130px;
-        height: 50px;
-        font-size: 17px;
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
         margin: 10px;
     }
     .bgs .center .title .sp h3{
