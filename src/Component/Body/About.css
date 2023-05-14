@@ -104,9 +104,9 @@
     color: white;
     border: none;
     transition: 0.7s;
+    margin: 10px;
     width: 130px;
     height: 40px;
-    margin: 10px;
     font-size: 17px;
 }
 .about .list p{
@@ -157,10 +157,9 @@
         font-size: 16px;
     }
     .about .list .det .btn button{
-        width: 120px;
-        height: 38px;
-        margin: 10px;
-        font-size: 15px;
+        width: 130px;
+        height: 40px;
+        font-size: 17px;
     }
 }
 @media only screen and (max-width: 1204px){
@@ -168,10 +167,11 @@
         font-size: 16px;
     }
     .about .list .det .btn button{
-        width: 100px;
-        height: 35px;
+       
         margin: 8px;
-        font-size: 14px;
+        width: 130px;
+        height: 40px;
+        font-size: 17px;
     }
 }
 @media only screen and (max-width: 1145px){
@@ -197,10 +197,11 @@
         overflow: hidden;
     }
     .about .list .det .btn button{
-        width: 90px;
-        height: 33px;
+        width: 130px;
+       height: 40px;
+       font-size: 17px;
         margin: 6px;
-        font-size: 13px;
+      
     }
     .abouts .mr input{
         width: 100px;
@@ -249,10 +250,11 @@
         overflow: hidden;
     }
     .about .list .det .btn button{
-        width: 110px;
+        width: 130px;
         height: 40px;
+        font-size: 17px;
         margin: 10px;
-        font-size: 14px;
+  
     }
     .about .list .det p{
         font-size: 16px;
@@ -304,10 +306,11 @@
     } */
 
     .about .list .det .btn button{
-        width: 100px;
+        width: 130px;
         height: 40px;
+        font-size: 17px;
         margin: 5px;
-        font-size: 13px;
+        
     }
     .about .list .Text{
         /* height: 500px; */
@@ -346,10 +349,11 @@
        /* border: 2px solid black; */
     }
     .about .list .det .btn button{
-        width: 90px;
+        width: 130px;
         height: 40px;
+        font-size: 17px;
         margin: 5px;
-        font-size: 12px;
+      
     }
     .about .list .imgs{
         margin-top: 10px;
@@ -386,10 +390,11 @@
 
     }
     .about .list .det .btn button{
-        width: 80px;
+        width: 130px;
         height: 40px;
+        font-size: 17px;
         margin: 5px;
-        font-size: 11px;
+     
     }
 }
 

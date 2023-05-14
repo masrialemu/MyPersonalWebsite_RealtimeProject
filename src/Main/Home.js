@@ -23,7 +23,7 @@ function Home() {
      {
       load ? <Loading/>:<div> {data.map((e)=><Header e={e} />)}
       {data.map((e)=><Body e={e} />)}
-      {data.map((e)=><Footer e={e} />)}}</div>
+      {data.map((e)=><Footer e={e} />)}</div>
      }
      </div>
 
