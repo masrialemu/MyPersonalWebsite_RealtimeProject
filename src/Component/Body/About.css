@@ -106,11 +106,12 @@
     transition: 0.7s;
     margin: 10px;
     width: 130px;
-    height: 40px;
+    height: 45px;
     font-size: 17px;
 }
 .about .list p{
     text-align: justify;
+   
 }
 @media only screen and (max-width: 1397px){
     .abouts .mr input{
@@ -134,7 +135,7 @@
            
     }
     .about .list p{
-        font-size: 13.5px;
+        font-size:18px;
         display: -webkit-box;
         -webkit-line-clamp: 30;
         -webkit-box-orient: vertical;
@@ -143,7 +144,7 @@
 }
 @media only screen and (max-width: 1350px){
     .about .list p{
-        font-size: 16px;
+        font-size: 18px;
     }
     .abouts .text{
         margin-top: 20px;
@@ -158,30 +159,30 @@
     }
     .about .list .det .btn button{
         width: 130px;
-        height: 40px;
+        height: 45px;
         font-size: 17px;
     }
 }
 @media only screen and (max-width: 1204px){
     .about .list p{
-        font-size: 16px;
+        font-size: 18px;
     }
     .about .list .det .btn button{
        
         margin: 8px;
         width: 130px;
-        height: 40px;
+        height: 45px;
         font-size: 17px;
     }
 }
 @media only screen and (max-width: 1145px){
     .about .list p{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 @media only screen and (max-width: 1102px){
     .about .list p{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 @media only screen and (max-width: 1040px){
@@ -190,7 +191,7 @@
            
     }
     .about .list p{
-        font-size: 13.5px;
+        font-size: 18px;
         display: -webkit-box;
         -webkit-line-clamp: 30;
         -webkit-box-orient: vertical;
@@ -198,7 +199,7 @@
     }
     .about .list .det .btn button{
         width: 130px;
-       height: 40px;
+       height: 45px;
        font-size: 17px;
         margin: 6px;
       
@@ -244,14 +245,14 @@
         justify-content: center
     }
     .about .list p{
-        font-size: 13px;
+        font-size: 18px;
         display: -webkit-box;
         /* -webkit-line-clamp: 8; */
         overflow: hidden;
     }
     .about .list .det .btn button{
         width: 130px;
-        height: 40px;
+        height: 45px;
         font-size: 17px;
         margin: 10px;
   
@@ -272,6 +273,7 @@
     }
 }
 @media only screen and (max-width: 653px){
+   
     .abouts .list{
         width: 98%;
      
@@ -298,6 +300,11 @@
      
        /* border: 2px solid black; */
     }
+    .about .list .det .text{
+        width: 80%;
+        
+     
+    }
     /* .about .mores{
         background-color: brown;
         width: 100%;
@@ -307,7 +314,7 @@
 
     .about .list .det .btn button{
         width: 130px;
-        height: 40px;
+        height: 45px;
         font-size: 17px;
         margin: 5px;
         
@@ -333,12 +340,15 @@
         margin-top: 10px;
     }
     .about .list .det p{
-        font-size: 17px;
+        font-size: 18px;
         width: 500px;
     }
     .about .list img{
         width: 350px;
         height: 350px;
+    }
+    .about .list .det .text{
+        width: 90%;
     }
 }
 
@@ -350,7 +360,7 @@
     }
     .about .list .det .btn button{
         width: 130px;
-        height: 40px;
+        height: 45px;
         font-size: 17px;
         margin: 5px;
       
@@ -359,29 +369,34 @@
         margin-top: 10px;
     }
     .about .list .det p{
-        font-size: 15px;
+        font-size: 18px;
         width: 600px;
     }
     .about .list img{
         width: 300px;
         height: 300px;
     }
+    .about .list .det .text{
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 400px){
+    .about .list .det .text{
+        width: 90%;
+    }
     .abouts .list{
-        width: 98%;
+        width: 100%;
      
        /* border: 2px solid black; */
     }
     .about .list .imgs{
         margin-top: 7px;
     }
-    .abouts p{
-       
-    }
+    
     .about .list .det p{
-        font-size: 15px;
-        width: 600px;
+        font-size: 18px;
+        width: 700px;
+     
         
     }
     .about .list img{
@@ -391,8 +406,8 @@
     }
     .about .list .det .btn button{
         width: 130px;
-        height: 40px;
-        font-size: 17px;
+        height: 45px;
+        font-size: 20px;
         margin: 5px;
      
     }
