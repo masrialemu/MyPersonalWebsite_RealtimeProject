@@ -80,21 +80,21 @@ const Background={backgroundImage:`url(${IMG6})`  }
      <div className="bg" style={Background}>
         <div className="bgs">
         <div className="left">
-          <button onClick={Left}><h1><AiOutlineLeft/></h1></button>
+          <button onClick={Left}><h1 style={{display:'none'}}><AiOutlineLeft/></h1></button>
         </div>
         <div className="center">
         <div className="title">
       <h3>{e.name.n1}</h3>
       <h1><span><span style={{color:"white"}}></span>
-      <h6>
+      <h3 className='ans'>
       <Typewriter
       options={{
-        strings: ['Masresha Alemu', 'MERN Stack developer', 'my expertise in','html','css','javascript','react.js','node.js','express.js','mongoose','mysqil','php','bootstrap','python','firebase','reactnative'],
+        strings: ['Masresha Alemu', 'my expertise in','html','css','javascript','react.js','node.js','express.js','mongoose','mysqil','php','bootstrap','python','firebase','react-native'],
         autoStart: true,
         loop: true,
         }}
        /> 
-      </h6>
+      </h3>
       </span></h1>  
       <h3>{e.name.n3}</h3>
       <span className='sp'><h3 style={{color:'white'}}>{e.name.n4}</h3></span>
@@ -104,7 +104,7 @@ const Background={backgroundImage:`url(${IMG6})`  }
       </div>
         </div>
         <div className="right">
-        <button onClick={Right}><h1><AiOutlineRight/></h1></button>
+        <button onClick={Right}><h1 style={{display:'none'}} ><AiOutlineRight/></h1></button>
         </div>
         </div>
       </div>

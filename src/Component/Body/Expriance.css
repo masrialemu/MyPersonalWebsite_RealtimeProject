@@ -203,10 +203,10 @@
 @media only screen and (max-width: 464px){
     
     .exp .html{
-        width: 300px;
+        width: 270px;
     }
     .exp .f1{
         position: relative;
-        left: -30px;
+        left: -40px;
     }
 }

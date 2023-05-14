@@ -19,7 +19,7 @@ function Portfolio() {
     <div>
     <div className='port' id='portfolio'>
       <div className="ports">
-      <span>My Portfolio</span>
+      <span>Portfolio</span>
       <h3>who i'm</h3>
       <div className="Ports">
      {port.map((e)=><div className="lport">
