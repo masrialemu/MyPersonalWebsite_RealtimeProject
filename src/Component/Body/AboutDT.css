@@ -20,7 +20,7 @@
     flex-wrap: nowrap;
     border-radius: 20px;
     border: 2px solid black;
-    width: 60%;
+    width: 70%;
     background-color:aliceblue;
     justify-content: center;
     justify-content: space-around;
@@ -43,32 +43,33 @@
 }
 
 @media only screen and (max-width: 1060px){
+
     .Dt .lists span{
-        font-size: 18px;
+        font-size: 20px;
         margin: 7px;
     }
     .Dt .lists .nm{
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
     }
 }
 @media only screen and (max-width: 990px){
     .Dt .lists span{
-        font-size: 15px;
+        font-size: 20px;
         margin: 5px;
     }
     .Dt .lists .nm{
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 600;
     }
 }
 @media only screen and (max-width: 845px){
     .Dt .lists span{
-        font-size: 13px;
+        font-size: 18px;
         margin: 4px;
     }
     .Dt .lists .nm{
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 600;
     }
 }
@@ -91,6 +92,11 @@
 }
 @media only screen and (max-width: 687px){
     .Dt .lists{
+        border: none;
+        width: 98%;
+        box-shadow: 0 0 5px 1px rgb(120, 206, 209);
+    }
+    .Dt .lists{
        flex-wrap: wrap;
     }
     .Dt .lists .ff{
@@ -103,23 +109,23 @@
 }
 @media only screen and (max-width: 417px){
     .Dt .lists span{
-        font-size: 12px;
+        font-size: 17px;
         margin: 2px;
     }
     .Dt .lists .nm{
-        font-size: 12px;
+        font-size: 17px;
         font-weight: 600;
     }
 }
 @media only screen and (max-width: 370px){
-    .Dt .lists span{
+    /* .Dt .lists span{
         font-size: 10px;
         margin: 1px;
-    }
-    .Dt .lists .nm{
+    } */
+    /* .Dt .lists .nm{
         font-size: 10px;
         font-weight: 600;
-    }
+    } */
 }
 /* @media only screen and (max-width: 695px){
     .Dt .lists span{

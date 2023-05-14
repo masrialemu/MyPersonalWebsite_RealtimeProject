@@ -10,9 +10,11 @@ function Portfolio() {
     const Fetch=async()=>{
       const res= await axios.get('https://back-end1.onrender.com/portfolio/get')
       setPort(res.data)
+      console.log(res.data)
     }
     Fetch()
     })
+   
   return (
     <div>
     <div className='port' id='portfolio'>

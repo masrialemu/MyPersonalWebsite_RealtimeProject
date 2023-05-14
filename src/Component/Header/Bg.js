@@ -9,12 +9,33 @@ import { AiOutlineLeft, AiOutlineRight} from "react-icons/ai";
 import './Bg.css'
 import Data from '../../Data/List'
 import Typewriter from 'typewriter-effect';
-
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 function Bg({e}) {
-  const elRef = useRef(null);
-const [use,setUse]=useState(Data)
+  const Pic=
+  [
+    {
+     id:1,
+     img:{IMG1}
+    },
+    {
+      id:2,
+      img:{IMG2}
+     },
+     {
+      id:3,
+      img:{IMG3}
+     },
+     {
+      id:4,
+      img:{IMG4}
+     },
+
+
+  ]
+
+const [use,setUse]=useState(Pic)
 const [num,setNum]=useState(0)
-const el = React.useRef(null);
+
 
 let time
 
@@ -50,7 +71,9 @@ const Right=()=>{
     setNum(num+1)
   }
 }
-const Background={backgroundImage:`url(${use[num].img})`  }
+
+// const Background={backgroundImage:`url(${use[num].img})`
+const Background={backgroundImage:`url(${IMG6})`  }
   return (
     <div className='BG' id='home'>
      <div className="BGS" >
@@ -76,7 +99,7 @@ const Background={backgroundImage:`url(${use[num].img})`  }
       <h3>{e.name.n3}</h3>
       <span className='sp'><h3 style={{color:'white'}}>{e.name.n4}</h3></span>
       <div className="let">
-      <button>let's Contact</button>
+      <a href="#contact"><button>let's Contact</button></a>
       </div>
       </div>
         </div>

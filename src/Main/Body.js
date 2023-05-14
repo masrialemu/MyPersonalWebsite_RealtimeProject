@@ -8,7 +8,7 @@ import Portfolio from '../Component/Body/Portfolio'
 import Service from '../Component/Body/Service'
 function Body({e}) {
   return (
-    <div style={{backgroundColor: "aliceblue"}}>
+    <div className='bodyy' style={{backgroundColor: "aliceblue"}}>
       
       <About e={e}/>
       <AboutDT e={e}/>

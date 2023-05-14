@@ -1,6 +1,14 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
+.con{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    background-color:aliceblue ;
+}
 .contact{
-    margin-top: 50px;
     width: 100%;
     height: auto;
     display: flex;
@@ -57,17 +65,28 @@
     color:white;
     transition: 0.7s;
 }
-.contact .contactt .btn:hover{
+/* .contact .contactt .btn:hover{
     background-color: transparent;
     border: 2px solid black;
     color: black;
-}
+} */
 .contact .contactt .cm{
     background-color:  #082032;
     color: white;
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 140%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contactt .cm1{
+    background-color:rgb(126, 3, 3);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 140%;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -111,7 +130,6 @@
     width: 100%;;
     display: flex;
     outline: none;
- 
     margin-top: 5px;
 }
 
@@ -152,6 +170,28 @@
     border: 1px solid black;
 }
 @media only screen and (max-width: 900px){
+    .contact .contactt .btn{
+        position: relative;
+        left: 160px;
+    }
+    .contact .Contact form{
+        /* display: flex; */
+        justify-content: flex-start;
+        position: relative;
+        right: 100px;
+    }
+    .contact .Contact form input{
+        background-color: transparent;
+        width: 140%;
+        margin-top: 5px;
+       
+    }
+    .contact .Contact form textarea{
+        width: 140%;
+    }
+    .contact .Contact form{
+        width: 97%; 
+    }
     .contact .Contact{
         flex-direction: column;
     }
@@ -189,8 +229,42 @@
 
     
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 650px){
     
+    .contact .Contact form{
+        right: 100px;
+    }
+    .contact .contactt .btn{
+        position: relative;
+        left: 100px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .contact .contactt .cm{
+        width: 160%;
+    }
+    .contact .Contact form{
+        right: 100px;
+    }
+    .contact .contactt .btn{
+        position: relative;
+        left: 100px;
+    }
+    .contact .Contact form input{
+        background-color: transparent;
+        width: 160%;
+        margin-top: 5px;
+       
+    }
+    .contact .Contact form textarea{
+        width: 160%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .contact .contactt .btn{
+        position: relative;
+        left: 140px;
+    }
     .contact .contacts span{
         font-size: 33px;
     }

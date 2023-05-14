@@ -3,6 +3,7 @@
     padding: 0;
 }
 .About{
+    overflow: hidden;
     width: 100%;
     height: auto;
     font-weight: 600;
@@ -33,7 +34,7 @@
 .abouts .list{
     flex-wrap: nowrap;
     overflow: hidden;
-    width: 70%;
+    width: 90%;
     height: auto;
    /* border: 2px solid black; */
 }
@@ -53,9 +54,11 @@
     cursor: pointer;
     overflow: hidden;
     border-radius: 20px;
+    border-top-right-radius: 50%;
+    border-top-left-radius:50% ;
     width: 400px;
     height: 400px;
- background-color: aliceblue;
+    background-color: hsl(208, 100%, 95%);
     border: 2px solid gray;
 }
 .about .list{
@@ -151,7 +154,7 @@
         margin-top: 20px;
     }
     .about .list p{
-        font-size: 15.8px;
+        font-size: 16px;
     }
     .about .list .det .btn button{
         width: 120px;
@@ -162,7 +165,7 @@
 }
 @media only screen and (max-width: 1204px){
     .about .list p{
-        font-size: 15.6px;
+        font-size: 16px;
     }
     .about .list .det .btn button{
         width: 100px;
@@ -173,12 +176,12 @@
 }
 @media only screen and (max-width: 1145px){
     .about .list p{
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 1102px){
     .about .list p{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 1040px){
@@ -208,6 +211,11 @@
     }
 }
 @media only screen and (max-width: 978px){
+    .abouts .list{
+        width: 98%;
+     
+       /* border: 2px solid black; */
+    }
     
     .abouts .mr{
         visibility: visible;
@@ -251,23 +259,43 @@
         
     }
 }@media only screen and (max-width: 830px){
+    .abouts .list{
+        width: 98%;
+     
+       /* border: 2px solid black; */
+    }
     .about .list .det p{
         width: 800px;
         
     }
 }
 @media only screen and (max-width: 653px){
+    .abouts .list{
+        width: 98%;
+     
+       /* border: 2px solid black; */
+    }
    .abouts .text{
     margin-top: 20px;
    }
 }
 
 @media only screen and (max-width: 633px){
+    .abouts .list{
+        width: 98%;
+     
+       /* border: 2px solid black; */
+    }
     .about .list .more{
         visibility: visible;
     }
 }
 @media only screen and (max-width: 600px){
+    .abouts .list{
+        width: 98%;
+     
+       /* border: 2px solid black; */
+    }
     /* .about .mores{
         background-color: brown;
         width: 100%;
@@ -306,12 +334,17 @@
         width: 500px;
     }
     .about .list img{
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
     }
 }
 
 @media only screen and (max-width: 448px){
+    .abouts .list{
+        width: 98%;
+     
+       /* border: 2px solid black; */
+    }
     .about .list .det .btn button{
         width: 90px;
         height: 40px;
@@ -323,14 +356,19 @@
     }
     .about .list .det p{
         font-size: 15px;
-        width: 400px;
+        width: 600px;
     }
     .about .list img{
-        width: 270px;
-        height: 270px;
+        width: 300px;
+        height: 300px;
     }
 }
 @media only screen and (max-width: 400px){
+    .abouts .list{
+        width: 98%;
+     
+       /* border: 2px solid black; */
+    }
     .about .list .imgs{
         margin-top: 7px;
     }
@@ -338,12 +376,13 @@
        
     }
     .about .list .det p{
-        font-size: 14px;
+        font-size: 15px;
+        width: 600px;
         
     }
     .about .list img{
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
     .about .list .det .btn button{
         width: 80px;

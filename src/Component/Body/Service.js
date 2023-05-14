@@ -8,7 +8,7 @@ function Service() {
   const [state, setstate] = useState(0)
   const Left=()=>{
     if(state<=0){
-      state(3)
+      setstate(3)
     }
     else{
       setstate(state-1)
@@ -16,7 +16,7 @@ function Service() {
   }
   const Right=()=>{
     if(state>=3){
-      state(0)
+      setstate(0)
     }
     else{
       setstate(state+1)

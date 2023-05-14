@@ -22,6 +22,7 @@ function Contact() {
   const [description, setDescription] = useState("");
   const [status, setStatus] = useState("");
     const [hide,setHide]=useState(true)
+    const [err,setErr]=useState(true)
     const [show,setShow]=useState(true)
     const [loading,setLoading]=useState(false)
   const Action=()=>{
@@ -32,11 +33,14 @@ function Contact() {
   const HandleSubmit = async(e) => {
       setLoading(true)
       e.preventDefault()
-     if(email==="" && title==="" || description===""){
-       return null
-     }else{
+      if (email.trim() === '' || title.trim() === '') {
+        setShow(false)
+        setHide(false)
+        setLoading(false)
+      }else{
        const res=await axios.post('https://back-end1.onrender.com/mail', { email, title, description })
       if(res.data){
+        setShow(true)
         setHide(false)
         setLoading(false)
       }
@@ -82,7 +86,7 @@ function Contact() {
          
         <div className="box">
            <form onSubmit={HandleSubmit}>
-          {!hide && <div className="cm">{show ? <p>The Email is Successfully Sent</p>:<p style={{backgroundColor:"red",color:"black"}}>The Email is Failed</p>}</div>}
+          {!hide && <div className="cm">{show ? <div className='cm'><p>The Email is Successfully Sent</p></div>:<div className='cm1'><p>Please Fill in The Required Fields</p></div>}</div>}
            <input style={{color:"black",fontSize:"14px"}} type="email" placeholder='please, Enter Your Email'
            value={email}
            onChange={(event) => setEmail(event.target.value)}  />
@@ -100,7 +104,7 @@ function Contact() {
             :
             <div className="Btn">
             <button type="submit"
-           className='btn1'>
+           className='btn'>
             <ClipLoader
         color="#36d7b7"
         loading={loading}
