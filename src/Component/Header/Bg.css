@@ -29,6 +29,7 @@
     transform: scale(1.03);
 }
 .bgs .left button{
+    visibility: hidden;
     transition: 0.5;
     margin-left: 30px;
     cursor: pointer;
@@ -43,6 +44,7 @@
    
 }
 .bgs .right button{
+    visibility: hidden;
     border: none;
     transition: 0.5;
     margin-right: 30px;
@@ -271,12 +273,7 @@
         font-size: 18px;
        
     }
-    .bgs .right button{
-        margin-right: 20px;
-        cursor: pointer;
-        width: 40px;
-        height: 25px;
-    }
+   
     .bgs .center .title h3{
         font-size: 17px;
         margin: 10px;
@@ -308,47 +305,13 @@
         position: relative;
        right: 30px;
     }
-    .bgs .left h1{
-        font-size: 18px;
-       
-    }
-    
-    .bgs .left button{
-        margin-left: 20px;
-        width: 40px;
-        height: 25px;
-    }
-    .bgs .right h1{
-        font-size: 18px;
-       
-    }
-    .bgs .right button{
-        margin-right: 20px;
-        cursor: pointer;
-        width: 40px;
-        height: 25px;
-    }
+
+  
     .bgs .center .title h3{
         font-size: 17px;
         margin: 10px;
     
     }
 
-  
-    .bgs .center .title .sp h3{
-       font-size: 18px;
-       font-weight: 600;
-    }
-  
-    .bgs .center .title h1{
-        font-size: 30px;
-       font-weight: 600;
-       justify-content: center;
-    }
-    .bgs .center .title button{
-        width: 130px;
-        height: 45px;
-        font-size: 17px;
-    }
 
 }
