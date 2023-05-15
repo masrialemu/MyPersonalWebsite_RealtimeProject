@@ -248,7 +248,7 @@
     }
     .contact .contactt .btn{
         position: relative;
-        left: 100px;
+        left: 165px;
     }
     .contact .Contact form input{
         background-color: transparent;
@@ -260,10 +260,42 @@
         width: 160%;
     }
 }
+@media only screen and (max-width: 470px){
+    .contact .contactt .btn{
+        position: relative;
+        left: 160px;
+    }
+    .contact .contacts span{
+        font-size: 33px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .contact .contactt .btn{
+        position: relative;
+        left: 120px;
+    }
+    .contact .contacts span{
+        font-size: 33px;
+    }
+    .contact .Contact form{
+        right: 80px;
+    }
+    .contact .Contact form input{
+        background-color: transparent;
+        width: 150%;
+        margin-top: 5px;
+       
+    }
+    .contact .Contact form textarea{
+        background-color: transparent;
+        width: 150%;
+        margin-top: 5px;
+    }
+}
 @media only screen and (max-width: 400px){
     .contact .contactt .btn{
         position: relative;
-        left: 140px;
+        left: 110px;
     }
     .contact .contacts span{
         font-size: 33px;

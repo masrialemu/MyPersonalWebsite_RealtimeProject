@@ -47,7 +47,7 @@ function About({e}) {
          }
         </div>
          <div className="btn">
-         <button>Download CV</button>
+         <button className='dtt'>Download CV</button>
       <a href="#contact"><button>Let's Contact</button></a>
          </div>
          </div>

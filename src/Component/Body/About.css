@@ -98,6 +98,9 @@
     color: black;
     border: 1px solid black;
 }
+/* .about .dtt{
+    cursor: none;
+} */
 .about .list .det .btn button{
     cursor: pointer;
     background-color: #082032;

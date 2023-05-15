@@ -33,12 +33,17 @@
     border-radius: 10px;
 }
 .port .Ports .dit{
+    background-color: #082032;
+    color: white;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
     height: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 .port .Ports .dit .time{
-    font-family: 'Times New Roman';
+    /* font-family: 'Times New Roman'; */
 }
 .port .Ports .btn{
     display: flex;
