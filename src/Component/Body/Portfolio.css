@@ -33,12 +33,22 @@
     border-radius: 10px;
 }
 .port .Ports .dit{
+    background-color: #082032;
+    color: white;
+    align-items: center;
+    border-radius: 20px;
+    overflow-x: hidden;
     height: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 .port .Ports .dit .time{
-    font-family: 'Times New Roman';
+    margin-left: 30px;
+    /* font-family: 'Times New Roman'; */
+}
+.port .Ports .dit .title{
+    margin-right: 30px;
+    /* font-family: 'Times New Roman'; */
 }
 .port .Ports .btn{
     display: flex;
@@ -129,16 +139,22 @@
 @media only screen and (max-width: 671px){
     .port .Ports{
         position: relative;
+        right: 0px;
+    }    
+}
+@media only screen and (max-width: 580px){
+    .port .Ports{
+        position: relative;
         right: 30px;
     }    
 }
 @media only screen and (max-width: 671px){
     .port .ports span{
-        font-size: 32PX;
+        font-size: 32px;
     }
     .port .Ports{
         position: relative;
-        right: 30px;
+        
     } 
     .port .Ports img{
         width: 350px;
