@@ -37,12 +37,17 @@
     color: white;
     align-items: center;
     border-radius: 20px;
-    overflow: hidden;
+    overflow-x: hidden;
     height: 40px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 .port .Ports .dit .time{
+    margin-left: 30px;
+    /* font-family: 'Times New Roman'; */
+}
+.port .Ports .dit .title{
+    margin-right: 30px;
     /* font-family: 'Times New Roman'; */
 }
 .port .Ports .btn{

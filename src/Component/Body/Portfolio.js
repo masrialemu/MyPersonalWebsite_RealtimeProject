@@ -26,7 +26,7 @@ function Portfolio() {
            
      <img src={e.url} alt="image" />
      <div className="dit">
-       <div className="time">12:30:1/22</div>
+       <div className="time">{new Date().getFullYear()}</div>
        <div className="title">{e.name}</div>
      </div>
      <div className="btn">
