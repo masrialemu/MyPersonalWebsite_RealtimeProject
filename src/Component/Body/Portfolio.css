@@ -5,8 +5,10 @@
     background-color: aliceblue;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .port .ports{
+    overflow: hidden;
     width: 60%;
     height: auto;
     background-color: aliceblue;
