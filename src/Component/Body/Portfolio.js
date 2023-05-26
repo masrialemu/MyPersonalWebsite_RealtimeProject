@@ -30,8 +30,8 @@ function Portfolio() {
        <div className="title">{e.name}</div>
      </div>
      <div className="btn">
-      <a href="http:///www.google.com" target="_blank" rel="noopener noreferrer"><button className='git'>GitHub</button></a>
-      <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><button className='live'>Live</button></a>
+      <a href={e.git} target="_blank" rel="noopener noreferrer"><button className='git'>GitHub</button></a>
+      <a href={e.live} target="_blank" rel="noopener noreferrer"><button className='live'>Live</button></a>
      </div>
     
 </div>)}
