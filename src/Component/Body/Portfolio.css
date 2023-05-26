@@ -5,9 +5,12 @@
     background-color: aliceblue;
     display: flex;
     justify-content: center;
+   
     overflow: hidden;
 }
 .port .ports{
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     width: 60%;
     height: auto;

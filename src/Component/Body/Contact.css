@@ -240,6 +240,9 @@
     }
 }
 @media only screen and (max-width: 500px){
+    .contact .contactt .cm1{
+        width: 160%;
+    }
     .contact .contactt .cm{
         width: 160%;
     }

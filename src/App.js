@@ -10,10 +10,10 @@ import Home from './Main/Home'
 
 function App() {
   return (
-   
+    <Switch>
      <Route path={'/'} exact><Home/></Route>
-    
-   
+     
+    </Switch>
   )
 }
 
