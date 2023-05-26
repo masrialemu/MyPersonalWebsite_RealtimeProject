@@ -20,12 +20,12 @@ function AboutDT({e}) {
     
     </div>
     <div className='ss' >
+
     <span className='nn'><span className='nm'><AiOutlineRight style={{margin:'3px'}} /> Phone:</span>{e.about_nm.anm5}</span>
     <span className='nn'><span className='nm'><AiOutlineRight style={{margin:'3px'}} /> Email:</span> {e.about_nm.anm6}</span>
     <span className='nn'><span className='nm'><AiOutlineRight style={{margin:'3px'}} /> Telegram:</span> {e.about_nm.anm7}</span>
     <span className='nn'><span className='nm'><AiOutlineRight style={{margin:'3px'}} /> WhatsApp:</span> {e.about_nm.anm8}</span>
-
-
+ 
     </div>
     </div>    
     </div>
