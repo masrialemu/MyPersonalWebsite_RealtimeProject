@@ -11,7 +11,7 @@ function Home() {
     const Fh = async()=>{
       const res= await axios.get('https://back-end1.onrender.com/get');
       setData(res.data)
-      console.log(res.data)
+     
       if(res.data){
         setLoad(false)
       }

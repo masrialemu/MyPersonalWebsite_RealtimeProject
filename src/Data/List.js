@@ -41,7 +41,22 @@ const Data=[
         title:"Fix",
         desc:"Brian Wilson Kernighan is a Canadian computer scientist who worked at Bell Labs alongside Unix creators Ken Thompson and Dennis Ritchie and contributed to the development of Unix. He is also coauthor of the AWK and AMPL programming languages. Kernighan’s name became widely known through co-authorship of the first book on the C programming language with Dennis Ritchie.",
         img:"https://images.unsplash.com/photo-1561494653-744c43aed0c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80"
-    }
+    },
+    {
+        id:7,
+        name:"Masri",
+        title:"Coding",
+        desc:"I'm a creative Full Stack Web Developer based in Ethiopia. I'm very passionate and dedicated to my work. With few years experience as a professional Full Stack Developer, I have acquired the skills necessary to build great, appealing, and premium websites that meet the latest web standards. Detail-orientated Web Developer adept at interpreting blueprints, working with others, and meeting production deadlines. Skilled at quickly learning new processes, technologies, and machinery. Self-motivated with strong organizational and time management abilities. Most importantly, I'm constantly trying to learn new skills to improve myself and my work.",
+        img:"https://images.unsplash.com/photo-1596003906949-67221c37965c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    },
+    
+    {
+        id:8,
+        name:"Java",
+        title:"Programmer",
+        desc:"Bjarne Stroustrup is a Danish computer scientist, most notable for the creation and development of the widely used C++ programming language. He is a Distinguished Research Professor and holds the College of Engineering Chair in Computer Science at Texas A&M University, a visiting professor at Columbia University, and works at Morgan Stanley.",
+        img:"https://images.unsplash.com/photo-1525373698358-041e3a460346?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
     
     ]
     export default Data
