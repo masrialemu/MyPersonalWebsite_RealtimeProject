@@ -89,7 +89,7 @@ const Background={backgroundImage:`url(${IMG6})`  }
       <h3 className='ans'>
       <Typewriter
       options={{
-        strings: ['Masresha Alemu', 'my expertise in','html','css','javascript','react.js','node.js','express.js','mongoose','mysqil','php','bootstrap','python','firebase','react-native'],
+        strings: ['html','css','javascript','react.js','node.js','express.js','mongoose','mysqil','php','bootstrap','python','firebase','react-native'],
         autoStart: true,
         loop: true,
         }}
@@ -97,7 +97,16 @@ const Background={backgroundImage:`url(${IMG6})`  }
       </h3>
       </span></h1>  
       <h3>{e.name.n3}</h3>
-      <span className='sp'><h3 style={{color:'white'}}>{e.name.n4}</h3></span>
+      <span className='sp'><h3 style={{color:'white'}}>
+      <Typewriter
+      options={{
+        strings: [`${e.name.n4}`],
+        autoStart: true,
+        loop: true,
+        }}
+       /> 
+      
+      </h3></span>
       <div className="let">
       <a href="#contact"><button>let's Contact</button></a>
       </div>
