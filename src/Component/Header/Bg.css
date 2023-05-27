@@ -62,6 +62,9 @@
     height: 300px;
     border: 1px solid white;
 } */
+.bgs .hoo{
+  color:rgb(180, 219, 89);
+}
 .bgs .center .title{
     width: 700px;
     height: 200px;
@@ -345,6 +348,7 @@
         width: 140px;
         height: 40px;
         font-size: 18px;
+      
     }
 
 

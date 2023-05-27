@@ -84,24 +84,18 @@ const Background={backgroundImage:`url(${IMG6})`  }
         </div>
         <div className="center">
         <div className="title">
-      <h3>{e.name.n1}</h3>
+      <h3><span className='hoo'>{`Hello, ${e.name.n1}`} </span> </h3>
       <h1><span><span style={{color:"white"}}></span>
-      <h3 className='ans'>
-      <Typewriter
-      options={{
-        strings: ['html','css','javascript','react.js','node.js','express.js','mongoose','mysqil','php','bootstrap','python','firebase','react-native'],
-        autoStart: true,
-        loop: true,
-        }}
-       /> 
+      <h3 className='ans' style={{color:'orange'}}>
+      {e.name.n4}
       </h3>
       </span></h1>  
       <h3>{e.name.n3}</h3>
-      <span className='ans'><h3 style={{color:"white"}}> 
-      {e.name.n4}
+      <span className='ans'><h3 style={{color:"red"}}> 
+      
       <Typewriter
       options={{
-        strings: [`.....`],
+        strings: ['html','css','javascript','react.js','node.js','express.js','mongoose','mysqil','php','bootstrap','python','firebase','react-native'],
         autoStart: true,
         loop: true,
         }}
