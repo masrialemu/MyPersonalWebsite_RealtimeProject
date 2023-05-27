@@ -12,8 +12,8 @@ function Body({e}) {
       
       <About e={e}/>
       <AboutDT e={e}/>
-      <Portfolio />
       <Expriance e={e}/>
+      <Portfolio />
       <Service e={e}/>
       <Contact/>
     </div>

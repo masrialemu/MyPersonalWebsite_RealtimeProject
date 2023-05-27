@@ -21,6 +21,7 @@
     flex-direction: column;
     overflow: hidden;
     width: 60%;
+    align-items: center;
     height: auto;
     background-color: aliceblue;
   }
@@ -47,8 +48,11 @@
     height: 400px;
     border-radius: 10px;
   }
-  
+  .port .Ports .lport{
+    margin: 20px;
+  }
   .port .Ports .dit {
+
     background-color: #082032;
     color: white;
     align-items: center;
