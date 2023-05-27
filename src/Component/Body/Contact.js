@@ -104,6 +104,7 @@ function Contact() {
             :
             <div className="Btn">
             <button type="submit"
+            disabled
            className='btn'>
             <ClipLoader
         color="#36d7b7"

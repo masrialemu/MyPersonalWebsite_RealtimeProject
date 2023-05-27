@@ -97,10 +97,11 @@ const Background={backgroundImage:`url(${IMG6})`  }
       </h3>
       </span></h1>  
       <h3>{e.name.n3}</h3>
-      <span className='sp'><h3 style={{color:'white'}}>
+      <span className='ans'><h3 style={{color:"white"}}> 
+      {e.name.n4}
       <Typewriter
       options={{
-        strings: [`${e.name.n4}`],
+        strings: [`.....`],
         autoStart: true,
         loop: true,
         }}

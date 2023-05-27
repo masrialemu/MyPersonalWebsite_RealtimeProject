@@ -155,23 +155,32 @@
     }
 }
 @media only screen and (max-width: 600px){
+    .bgs .center{
+        width: 200%;
+        display: flex;
+        justify-content: center;
+    }
+    .ans{
+
+color: #8f7eda;     
+    }
     .bgs .center .title button{
-        width: 130px;
-        height: 45px;
-        font-size: 17px;
+        width: 200px;
+        height: 70px;
+        font-size: 26px;
     }
     .bgs .center .title h3{
-        font-size: 25px;
+        font-size: 30px;
         margin: 10px;
     
     }
 
-    .bgs .center .title button{
+    /* .bgs .center .title button{
         width: 130px;
         height: 45px;
         font-size: 17px;
         margin: 10px;
-    }
+    } */
     .bgs .center .title .sp h3{
        font-size: 20px;
        font-weight: 600;
@@ -197,11 +206,11 @@
     font-size: 30px;
    
 }
-.bgs .center .title h3{
+/* .bgs .center .title h3{
     font-size: 17px;
     margin: 10px;
 
-}
+} */
 .bgs .right button{
     margin-right: 20px;
     cursor: pointer;
@@ -214,32 +223,25 @@
 
 @media only screen and (max-width: 550px){
     .bgs .center .title{
-        width: 250px;
-        height: 220px;
-      position: relative;
-      left: 10px;
-    }
-}.bgs .center .title h3{
-    /* font-size: 20px; */
-   
-
+        margin-right: 10%;
+      }
 }
 @media only screen and (max-width: 500px){
-    .bgs .center .title button{
-        width: 130px;
-        height: 45px;
-        font-size: 17px;
-    }
     .bgs .center .title{
-        width: 270px;
-        height: 240px;
+      margin-right: 20%;
     }
-    .bgs .left h1{
+    /* .bgs .center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    } */
+    
+    /* .bgs .left h1{
         font-size: 20px;
        
-    }
+    } */
     
-    .bgs .left button{
+    /* .bgs .left button{
         margin-left: 20px;
         width: 50px;
         height: 30px;
@@ -253,20 +255,25 @@
         cursor: pointer;
         width: 50px;
         height: 30px;
+    } */
+}
+
+@media only screen and (max-width: 470px){
+    .bgs .center .title{
+      margin-right: 30%;
     }
 }
+
 @media only screen and (max-width: 450px){
     .bgs .center .title{
-        width: 250px;
-        height: 220px;
-  
-    }
+        margin-right: 40%;
+      }
     .bgs .left h1{
         font-size: 18px;
        
     }
     
-    .bgs .left button{
+    /* .bgs .left button{
         margin-left: 20px;
         width: 40px;
         height: 25px;
@@ -274,13 +281,13 @@
     .bgs .right h1{
         font-size: 18px;
        
-    }
+    } */
    
-    .bgs .center .title h3{
+    /* .bgs .center .title h3{
         font-size: 17px;
         margin: 10px;
     
-    }
+    } */
 
   
     .bgs .center .title .sp h3{
@@ -293,24 +300,45 @@
        font-weight: 600;
        justify-content: center;
     }
-    .bgs .center .title button{
+    /* .bgs .center .title button{
         width: 130px;
         height: 45px;
         font-size: 17px;
-    }
+    } */
 
 };
+@media only screen and (max-width: 410px){
+    /* .bgs .center .title{
+        
+      } */
+
+      /* .bgs .center .title h3{
+        font-size: 15px;
+        font-weight: 600;
+     } */
+     
+     .bgs .center .title .sp h3{
+        font-size: 17px;
+        font-weight: 600;
+     }
+   
+     .bgs .center .title h1{
+        display: flex;
+        font-weight: 600;
+        justify-content: center;
+     }
+     
+    
+}
 @media only screen and (max-width: 350px){
     .bgs .center .title{
-        width: 250px;
-        height: 220px;
-        position: relative;
-       right: 30px;
+        
+        margin-right: 60%;
     }
 
   
     .bgs .center .title h3{
-        font-size: 17px;
+        font-size: 25px;
         margin: 10px;
     
     }

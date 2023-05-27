@@ -273,6 +273,12 @@
     }
 }
 @media only screen and (max-width: 450px){
+    .contact .contactt .cm1{
+        width: 150%;
+    }
+    .contact .contactt .cm{
+        width: 150%;
+    }
     .contact .contactt .btn{
         position: relative;
         left: 120px;
@@ -296,10 +302,10 @@
     }
 }
 @media only screen and (max-width: 400px){
-    .contact .contactt .btn{
+    /* .contact .contactt .btn{
         position: relative;
         left: 110px;
-    }
+    } */
     .contact .contacts span{
         font-size: 33px;
     }
