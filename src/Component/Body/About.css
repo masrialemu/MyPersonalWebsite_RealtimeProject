@@ -110,7 +110,7 @@
     margin: 10px;
     width: 130px;
     height: 45px;
-    font-size: 17px;
+    font-size: 15px;
 }
 .about .list p{
     text-align: justify;
@@ -163,7 +163,7 @@
     .about .list .det .btn button{
         width: 130px;
         height: 45px;
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 1204px){
@@ -175,7 +175,7 @@
         margin: 8px;
         width: 130px;
         height: 45px;
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 1145px){
@@ -203,7 +203,7 @@
     .about .list .det .btn button{
         width: 130px;
        height: 45px;
-       font-size: 17px;
+       font-size: 15px;
         margin: 6px;
       
     }
@@ -256,7 +256,7 @@
     .about .list .det .btn button{
         width: 130px;
         height: 45px;
-        font-size: 17px;
+        font-size: 15px;
         margin: 10px;
   
     }
@@ -318,7 +318,7 @@
     .about .list .det .btn button{
         width: 130px;
         height: 45px;
-        font-size: 17px;
+        font-size: 15px;
         margin: 5px;
         
     }
@@ -358,7 +358,7 @@
     .about .list .det .btn button{
         width: 130px;
         height: 45px;
-        font-size: 17px;
+        font-size: 15px;
         margin: 5px;
       
     }
@@ -404,7 +404,7 @@
     .about .list .det .btn button{
         width: 130px;
         height: 45px;
-        font-size: 20px;
+        font-size: 17px;
         margin: 5px;
      
     }

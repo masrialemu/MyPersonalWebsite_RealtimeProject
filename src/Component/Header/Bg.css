@@ -15,7 +15,7 @@
     width: 100%;
     height: 80vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
 }
@@ -69,6 +69,11 @@
     backdrop-filter: blur(5px);
     margin-top: 13%;
     color: white;
+    
+}
+.bgs .center{
+    display: flex;
+    justify-content: center;
 }
 .bgs .center .title h3{
     color: red;
@@ -128,10 +133,9 @@
 }
 
 
-
 /* ////////////////media/////////////// */
 
-@media only screen and (max-width: 800px){
+/* @media only screen and (max-width: 800px){
     .bgs .center .title{
         width: 400px;
         height: 250px;
@@ -153,24 +157,24 @@
         height: 45px;
         font-size: 17px;
     }
-}
+} */
 @media only screen and (max-width: 600px){
-    .bgs .center{
+    /* .bgs .center{
         width: 200%;
         display: flex;
         justify-content: center;
     }
-    .ans{
-
-color: #8f7eda;     
+    */
+    .bgs .center .title{
+        height: 300px;
     }
     .bgs .center .title button{
-        width: 200px;
-        height: 70px;
-        font-size: 26px;
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
     }
     .bgs .center .title h3{
-        font-size: 30px;
+        font-size: 23px;
         margin: 10px;
     
     }
@@ -221,15 +225,11 @@ color: #8f7eda;
 }
 }
 
-@media only screen and (max-width: 550px){
-    .bgs .center .title{
-        margin-right: 10%;
-      }
-}
+
 @media only screen and (max-width: 500px){
-    .bgs .center .title{
+    /* .bgs .center .title{
       margin-right: 20%;
-    }
+    } */
     /* .bgs .center {
         width: 100%;
         display: flex;
@@ -256,18 +256,17 @@ color: #8f7eda;
         width: 50px;
         height: 30px;
     } */
-}
-
-@media only screen and (max-width: 470px){
-    .bgs .center .title{
-      margin-right: 30%;
+    .bgs .right button{
+        cursor: pointer;
     }
 }
 
+
+
 @media only screen and (max-width: 450px){
-    .bgs .center .title{
+    /* .bgs .center .title{
         margin-right: 40%;
-      }
+      } */
     .bgs .left h1{
         font-size: 18px;
        
@@ -331,16 +330,21 @@ color: #8f7eda;
     
 }
 @media only screen and (max-width: 350px){
-    .bgs .center .title{
+    /* .bgs .center .title{
         
         margin-right: 60%;
-    }
+    } */
 
   
     .bgs .center .title h3{
-        font-size: 25px;
+        font-size: 20px;
         margin: 10px;
     
+    }
+    .bgs .center .title button{
+        width: 140px;
+        height: 40px;
+        font-size: 18px;
     }
 
 
