@@ -322,13 +322,7 @@
         margin: 5px;
         
     }
-    .about .list .Text{
-        /* height: 500px; */
-    }
-  .about .list .text{
-    /* height: 380px; */
- 
-  }
+  
   .about .list .more{
     visibility: visible;
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Contact.css'
-import {AiFillFacebook,AiFillGithub,AiOutlineTwitter,AiFillLinkedin, AiOutlineInstagram,AiOutlineUser,AiOutlineRight,AiOutlineLeft } from "react-icons/ai"
+import {AiFillFacebook,AiFillGithub,AiOutlineTwitter,AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai"
 import {FaTelegram} from "react-icons/fa"
 import {Link} from 'react-router-dom'
 import axios from 'axios'
@@ -90,7 +90,7 @@ function Contact() {
            <input style={{color:"black",fontSize:"14px"}} type="email" placeholder='please, Enter Your Email'
            value={email}
            onChange={(event) => setEmail(event.target.value)}  />
-           <input type="Title" style={{color:"black"}} name="title" className='email' placeholder='Please, Enter Your Title'  type="text"
+           <input  style={{color:"black"}} name="title" className='email' placeholder='Please, Enter Your Title'  type="text"
            value={title}
            onChange={(event) => setTitle(event.target.value)} />
            <textarea name="desc" style={{color:"black"}} placeholder='Please, Enter Your Description'  value={description}
