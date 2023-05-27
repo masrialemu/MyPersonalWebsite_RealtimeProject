@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import './Service.css'
 import { AiOutlineUser,AiOutlineRight,AiOutlineLeft } from "react-icons/ai";
 import { DiCodeigniter} from "react-icons/di";
@@ -6,18 +6,9 @@ import { DiCodeigniter} from "react-icons/di";
 import List from '../../Data/Ser'
 function Service() {
   const [state, setstate] = useState(0)
-  const [num,setNum]=useState(307)
- 
-  let total=state*num
-  console.log(total)
-  const style={
-    right: `${total}px`
-  }
-
- 
   const Left=()=>{
     if(state<=0){
-      setstate(5)
+      setstate(0)
     }
     else{
       setstate(state-1)
@@ -32,7 +23,9 @@ function Service() {
     }
    
   }
-
+  const style={
+    right: `${state*307}px`
+  }
   return (
     <div className='service' id='service'>
       <div className="services">

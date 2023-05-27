@@ -47,7 +47,7 @@
   justify-content: center;
 }
 .about .list img:hover{
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 .about .list img{
     transition: 0.7s;
