@@ -22,7 +22,7 @@ function Portfolio() {
   }, [port]); // Pass an empty dependency array to run the effect only once
 
   return (
-    <div className="portos">
+    <div className="portos" id='portfolio'>
       <div className='port' >
         <div className="ports">
           <span>Portfolio</span>
