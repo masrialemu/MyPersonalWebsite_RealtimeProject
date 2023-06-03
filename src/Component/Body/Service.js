@@ -4,8 +4,11 @@ import { AiOutlineUser,AiOutlineRight,AiOutlineLeft } from "react-icons/ai";
 import { DiCodeigniter} from "react-icons/di";
 
 import List from '../../Data/Ser'
+import { useEffect } from 'react';
 function Service() {
+  const [hide,setHide]=useState(true)
   const [state, setstate] = useState(0)
+  const [size,setSize]=useState(window.innerWidth)
   const Left=()=>{
     if(state<=0){
       setstate(0)
@@ -23,6 +26,20 @@ function Service() {
     }
    
   }
+  useEffect(()=>{
+    window.addEventListener('resize',()=>{
+     setSize(window.innerWidth)
+    })
+    if(size<=600){
+      setHide(false)
+      
+     }
+     else if(600>size){
+     
+      setHide(true)
+     }
+  },[size])
+
   const style={
     right: `${state*307}px`
   }
@@ -33,7 +50,7 @@ function Service() {
       <h3>who i'm</h3>
       <div className="Serr">
       <div className="Ser">
-      <h1 className="bt"><AiOutlineLeft onClick={Left}/></h1>
+      {hide ? <h1 ><AiOutlineLeft onClick={Left}/></h1>:<h1 ><AiOutlineLeft/></h1>}
    <div className="main">
      <div className="Services">
      
@@ -53,7 +70,7 @@ function Service() {
 
      </div>
      </div>
-     <h1 className='bt'><AiOutlineRight onClick={Right} /></h1>
+    { hide ? <h1 ><AiOutlineRight onClick={Right} /></h1>:<h1 ><AiOutlineRight  /></h1>}
 
       </div>
 
