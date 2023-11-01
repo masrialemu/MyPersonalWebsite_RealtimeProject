@@ -1,37 +1,43 @@
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Body from './Body'
 import Footer from './Footer'
 import Header from './Header'
-import Loading from '../Component/Load/Loading'
+import LoadingPage from '../Component/Load/Loading'
+import axios from 'axios'
+
 function Home() {
   const [data,setData]=useState([])
-  const [load,setLoad]=useState(true)
-  useEffect(()=>{
-    const Fh = async()=>{
-      const res= await axios.get('https://back-end1.onrender.com/get');
-      setData(res.data)
-     
-      if(res.data){
-        setLoad(false)
-      }
-      
-    }
-    Fh()
-    
-  },[])
+  const [load,setLoad]=useState(true) 
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+        try {
+            const response = await axios.get('/get/project');
+            setProjects(response.data);
+            setLoad(false)
+        } catch (error) {
+            console.error(error);
+            
+        }
+    };
+
+    fetchData(); 
+}, []); // Empty dependency array, meaning it will run once when the component mounts
+
   
   return (
-     <div>
-     {
-      load ? <Loading/>:<div> {data.map((e)=><Header e={e} />)}
-      {data.map((e)=><Body e={e} />)}
-      {data.map((e)=><Footer e={e} />)}</div>
-     }
+    <div>
+    {
+      load ? <LoadingPage/>:
+      <div>
+      <Header  />
+      <Body />
+      <Footer />
      </div>
+    }
+    </div>
 
-
-  )
-}
-
+)
+  }
 export default Home

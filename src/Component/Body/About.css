@@ -107,7 +107,7 @@
     color: white;
     border: none;
     transition: 0.7s;
-    margin: 10px;
+    margin: 20px;
     width: 130px;
     height: 45px;
     font-size: 15px;
@@ -216,10 +216,21 @@
     }
 }
 @media only screen and (max-width: 978px){
-    .abouts .list{
-        width: 98%;
+    .about .list img{
+        width: 100%;
+        height: 600px;
      
-       /* border: 2px solid black; */
+    }
+  
+   
+    .text{
+        width: 100%;
+    }
+    .abouts .list{
+        width: 100%;
+    }
+    .abouts{
+        width: 100%;
     }
     
     .abouts .mr{
@@ -227,6 +238,7 @@
            
     }
     .abouts .mr input{
+        margin-top: 20px;
         width: 100px;
         cursor: pointer;
         height: 30px;
@@ -248,9 +260,7 @@
         justify-content: center
     }
     .about .list p{
-        font-size: 18px;
-        display: -webkit-box;
-        /* -webkit-line-clamp: 8; */
+        font-size: 20px;
         overflow: hidden;
     }
     .about .list .det .btn button{
@@ -260,27 +270,56 @@
         margin: 10px;
   
     }
-    .about .list .det p{
-        font-size: 16px;
-        
-    }
+ 
 }@media only screen and (max-width: 830px){
+    .about .list img{
+        width: 100%;
+        height: 600px;
+     
+    }
+    .about .list p{
+        width:80%;
+        font-size: 20px;
+        overflow: hidden;
+    }
     .abouts .list{
         width: 98%;
      
        /* border: 2px solid black; */
     }
-    .about .list .det p{
-        width: 800px;
-        
+    .about .list .det .text{
+        justify-content: center;
+        width: 100%;
     }
+ 
+}
+
+@media only screen and (max-width: 750px){
+    .about .list img{
+        width: 90%;
+        height: 600px;
+     
+    }
+    .about .list p{
+        width:80%;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    .abouts .list{
+        width: 98%;
+     
+       /* border: 2px solid black; */
+    }
+    .about .list .det .text{
+        justify-content: center;
+        width: 100%;
+    }
+ 
 }
 @media only screen and (max-width: 653px){
    
     .abouts .list{
         width: 98%;
-     
-       /* border: 2px solid black; */
     }
    .abouts .text{
     margin-top: 20px;
@@ -300,11 +339,20 @@
 @media only screen and (max-width: 600px){
     .abouts .list{
         width: 98%;
-     
-       /* border: 2px solid black; */
     }
+    .about .list img{
+        width: 90%;
+        height: 500px;
+     
+    }
+    .about .list p{
+        width:90%;
+      
+    }
+
+   
     .about .list .det .text{
-        width: 80%;
+        width: 100%;
         
      
     }
@@ -333,23 +381,15 @@
     
    }
 
-    .about .list .imgs{
-        margin-top: 10px;
-    }
-    .about .list .det p{
-        font-size: 18px;
-        width: 500px;
-    }
-    .about .list img{
-        width: 350px;
-        height: 350px;
-    }
-    .about .list .det .text{
-        width: 90%;
-    }
+
 }
 
 @media only screen and (max-width: 448px){
+    .about .list img{
+        width: 90%;
+        height: 450px;
+     
+    }
     .abouts .list{
         width: 98%;
      
@@ -359,23 +399,15 @@
         width: 130px;
         height: 45px;
         font-size: 15px;
-        margin: 5px;
+        margin: 10px;
       
     }
     .about .list .imgs{
         margin-top: 10px;
     }
-    .about .list .det p{
-        font-size: 18px;
-        width: 600px;
-    }
-    .about .list img{
-        width: 300px;
-        height: 300px;
-    }
-    .about .list .det .text{
-        width: 90%;
-    }
+ 
+ 
+  
 }
 @media only screen and (max-width: 400px){
     .about .list .det .text{

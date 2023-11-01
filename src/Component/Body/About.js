@@ -1,22 +1,27 @@
-import Masri from '../../Img/Masri.png'
 import React, { useEffect, useState } from 'react'
 import './About.css'
+import axios from 'axios';
 function About({e}) {
-  const [more,setMore]=useState(false)
   const [Btn,setBtn]=useState(false)
-  const [size,setSize]=useState(window.innerWidth)
+  const [skills, setSkills] = useState([]);
+  
+  useEffect(() => {
+    
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('/get/content'); // Replace with your server URL
+       setSkills(response.data)
+       console.log(response.data)
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    
+    fetchData();
+  }, []);
 
-  // useEffect(()=>{
-  //   window.addEventListener('resize',()=>{
-  //    setSize(window.innerWidth)
-  //   })
-  //   if(size<600){
-  //     setMore(true)
-  //    }
-  //    else{
-  //     setMore(false)
-  //    }
-  // },[])
+  
+
   const SeeMore=()=>{
     setBtn(p=>!p)
   }
@@ -29,15 +34,18 @@ function About({e}) {
       <div className="about">
       <span>About Me</span>
       <h3>who i'm</h3>
-        <div className="abouts">
+        {
+          skills.map((e)=>(
+            <div className="abouts">
          <div className="list">
          <div className="imgs">
-         <img src={e.about.aurl} alt="image"  />
+         <img src={e.image} alt={e.image}  className='imgh' />
          </div>
          <div className="det">
          <div className="Text">
          <div className="text" >
-          <p style={Text}>{e.about.def}
+          <p style={Text}>
+         {e.desc}
           </p> 
          </div>
          <div className="mr">
@@ -47,14 +55,16 @@ function About({e}) {
          }
         </div>
          <div className="btn">
-         <button className='dtt'>Download CV</button>
-      <a href="#contact"><button>Let's Contact</button></a>
+          <a href={e.cv}><button className='dtt'>Download CV</button></a>
+          <a href="#contact"><button>Let's Contact</button></a>
          </div>
          </div>
          </div>
 
          </div>
         </div>
+          ))
+        }
       </div>
     </div>
   )

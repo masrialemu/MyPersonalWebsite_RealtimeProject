@@ -3,23 +3,43 @@ import IMG from '../../Img/best.jpg';
 import './Portfolio.css';
 import Data from '../../Data/List';
 import axios from 'axios';
+import { AiFillDelete} from "react-icons/ai";
+import { Link } from 'react-router-dom';
+
 
 function Portfolio() {
-  const [port, setPort] = useState([]);
-
+  
+  const [projects, setProjects] = useState([]);
+  const userData = JSON.parse(localStorage.getItem("userData"));
+  const token = userData ? userData.token : null;
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const res = await axios.get('https://back-end1.onrender.com/portfolio/get');
-        setPort(res.data);
-
-      } catch (error) {
- 
-      }
+        try {
+            const response = await axios.get('/get/project');
+            setProjects(response.data);
+        } catch (error) {
+            console.error(error);
+        }
     };
 
-    fetchData();
-  }, [port]); // Pass an empty dependency array to run the effect only once
+    fetchData(); 
+}, []); // Empty dependency array, meaning it will run once when the component mounts
+
+const handleDelete1 = async (id) => {
+  try {
+    const response = await axios.delete(`/delete/project/${id}`, {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+      },
+    });
+    console.log('project deleted successfully');
+    window.location.reload()
+  } catch (error) {
+    // Handle the error here
+    console.error('Error deleting item', error);
+  }
+};
+
 
   return (
     <div className="portos" id='portfolio'>
@@ -27,28 +47,45 @@ function Portfolio() {
         <div className="ports">
           <span>Portfolio</span>
           <h3>who I am</h3>
-          <div className="Ports">
-            {port.map((e) => (
-              <div className="lport" key={e.id}>
-                <img src={e.url} alt="image" />
+         
+          {projects.map((project) => (
+            <div className="Ports">
+           
+              <div className="lport" key={project._id}>
+                <div className="imgxx">
+                  <img src={project.image} alt="Project" />
+                </div>
                 <div className="dit">
-                  <div className="time">{new Date().getFullYear()}</div>
-                  <div className="title">{e.name}</div>
+                  <div className="time">{new Date(project.createdAt).getFullYear()}
+                  </div>
+                  <div className="title">{project.title}</div>
                 </div>
                 <div className="btn">
-                  <a href={e.git} target="_blank" rel="noopener noreferrer">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <button className='git'>GitHub</button>
                   </a>
-                  <a href={e.live} target="_blank" rel="noopener noreferrer">
+                  <a href={project.live} target="_blank" rel="noopener noreferrer">
                     <button className='live'>Live</button>
                   </a>
+                  <Link to={`/project/${project._id}`}>
+                  <button className="live">Detail</button>
+                </Link>
+       
+                 {
+                  token ?  <AiFillDelete className='byy'  onClick={()=>handleDelete1(project._id)} />
+         :null
+                 }
+                
                 </div>
               </div>
-            ))}
+           
           </div>
+          ))}
+
         </div>
       </div>
     </div>
+
   );
 }
 

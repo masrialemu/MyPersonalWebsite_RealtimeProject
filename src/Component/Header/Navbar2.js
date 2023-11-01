@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
-import { AiOutlineUserAdd,AiOutlineLogout } from "react-icons/ai";
-import { useUser } from '../../Context/Context'; // Import your UserContext
-
+import { AiOutlineUserAdd,AiOutlineLogout,AiOutlineClose } from "react-icons/ai";
+import {Link} from 'react-router-dom'
 function Navbar() {
-const { logout } = useUser();
 const [hide,setHide]=useState(true)
+const [hideX,setHideX]=useState(true)
 const [scroll,setScroll]=useState(false)
 const [size,setSize]=useState(window.innerWidth)
 const Show=()=>{
@@ -36,13 +35,9 @@ useEffect(()=>{
     setHide(false)
    }
 },[size])
-const userData = JSON.parse(localStorage.getItem("userData"));
-const token = userData ? userData.token : null;
-
-
 
 const List={
-    height:hide&&`${0}px`,
+    height:hide&&`${-2}px`,
     transition: `${0.5}s`
 }
 const Navbar={
@@ -67,29 +62,17 @@ const Navbar={
     <div className='navbar'>
       <div className="navbars" >
         <div className="list" >
-        <h3><a href="home" className='link' style={{color:"red"}}>Home</a></h3>
-        <h3><a href="#about" className='link'>About</a></h3>
-        <h3><a href="#exp" className='link'>Expriance</a></h3>
-        <h3><a href="#portfolio" className='link'>Portfolio</a></h3>
-        <h3><a href="#service" className='link'>Service</a></h3>
-        <h3><a href="#contact" className='link' >Contact</a></h3>
-        <h3><a href="/post" className='link' >Post</a></h3>
-
+        <h3><a href="/home" className='link'>Home</a></h3>
+        <h3><a href="/home" className='link'>About</a></h3>
+        <h3><a href="/home" className='link'>Expriance</a></h3>
+        <h3><a href="/home" className='link'>Portfolio</a></h3>
+        <h3><a href="/home" className='link'>Service</a></h3>
+        <h3><a href="/home" className='link' >Contact</a></h3>
+        <h3><a href="/post" className='link' style={{color:"red"}}>Post</a></h3>
         </div>
         <div className="btn">
           <div className="">
-
-          <h3 className='lg'>
-      {token ? (
-
-        <AiOutlineLogout onClick={logout} />
-
-      ) : (
-        <a href="/login">
-          <AiOutlineUserAdd />
-        </a>
-      )}
-    </h3>
+          <h3 className='lg'><a href="/login"><AiOutlineUserAdd/></a></h3>
           <h3 className='hd' onClick={Show}>{hide ?"=":"x"}</h3>
           </div>        
         </div>

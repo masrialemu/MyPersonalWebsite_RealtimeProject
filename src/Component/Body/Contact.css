@@ -113,6 +113,7 @@
 .contact .Contact form input{
     background-color: transparent;
     width: 100%;
+    height: 50px;
     outline: none;
     margin-top: 5px;
     border: 1.5px solid #082032;

@@ -3,11 +3,11 @@ import BG from '../Component/Header/Bg'
 import React from 'react';
 
 
-function Header({e}) {
+function Header() {
   return (
     <div>
      <Navbar/>
-      <BG e={e} />
+      <BG/>
     </div>
   )
 }

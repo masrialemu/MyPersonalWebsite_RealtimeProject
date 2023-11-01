@@ -7,10 +7,20 @@
     justify-content: center;
     overflow: hidden;
 }
+
+ .byy{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
 .exp .exps{
-    width: 60%;
+    width: 80%;
     height: auto;
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
 }
 .exp .exps h3{
     display: flex;
@@ -27,17 +37,17 @@
     justify-content: center;
     margin: 20px;
 }
+
 .exp .Exps{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
-/* .exp .f1{
-   
-} */
+
 .exp .html{
-    width: 400px;
+    width: 100%;
     height: 10px;
     background-color: gainsboro;
     border-radius: 20px;
@@ -46,6 +56,7 @@
 }
 
 .exp .f1{
+    width: 40%;
     margin: 10px;
     color: #082032;
 }
@@ -53,7 +64,14 @@
     font-size: 20px;
     height: 35px;
 }
-.exp .html .inh{
+.exlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exp .html .injv{
     border-radius: 20px;
     width: 90%;
     /* width: 0%; */
@@ -61,152 +79,31 @@
     background-color:  #082032;
 }
 
-.exp .html .ins{
-    border-radius: 20px;
-    width: 80%;
-    height: 7px;
-    background-color:  #082032;
-}
-
-.exp .html .inj{
-    border-radius: 20px;
-    width: 70%;
-    height: 7px;
-    background-color:  #082032;
-}
-
-.exp .html .inr{
-    border-radius: 20px;
-    width: 75%;
-    height: 7px;
-    background-color:  #082032;
-}
-
-.exp .html .inb{
-    border-radius: 20px;
-    width: 60%;
-    height: 7px;
-    background-color:  #082032;
-}
-
-.exp .html .inrn{
-    border-radius: 20px;
-    width: 60%;
-    height: 7px;
-    background-color:  #082032;
-}
-
-.exp .html .inn{
-    border-radius: 20px;
-    width: 85%;
-    height: 7px;
-    background-color:  #082032;
-}
-.exp .html .incc{
-    border-radius: 20px;
-    width: 70%;
-    height: 7px;
-    background-color:  #082032;
-}
-.exp .html .inm{
-    border-radius: 20px;
-    width: 95%;
-    height: 7px;
-    background-color:  #082032;
-}
-.exp .html .inf{
-    border-radius: 20px;
-    width: 70%;
-    height: 7px;
-    background-color:  #082032;
-}
-.exp .html .inp{
-    border-radius: 20px;
-    width: 75%;
-    height: 7px;
-    background-color:  #082032;
-}
-.exp .html .injv{
-    border-radius: 20px;
-    width: 65%;
-    height: 7px;
-    background-color:  #082032;
-}
 
 
 /* /////////////////////mobile/////////////////////// */
 
-@media only screen and (max-width: 1095px){
-    .exp .html{
-        width: 350px;
-    }
+@media only screen and (max-width: 800px){
+   .exp .f1{
+    width: 90%;
+   }    
 }
 
-@media only screen and (max-width: 1040px){
-    .exp .html{
-        width: 350px;
-    }
-    .exp .f1{
-        position: relative;
-        left: -30px;
-    }
-}
-@media only screen and (max-width: 991px){
-    .exp .html{
-        width: 350px;
-    }
-    .exp .f1{
-        position: relative;
-        left: -70px;
-    }
-}
+
 @media only screen and (max-width: 897px){
-    .exp .html{
-        width: 320px;
-    }
-    .exp .f1{
-        position: relative;
-        left: -90px;
-    }
-}
-@media only screen and (max-width: 794px){
-    .exp .html{
-        width: 300px;
-    }
-    .exp .f1{
-        position: relative;
-        left: -100px;
-    }
-}
-@media only screen and (max-width: 690px){
+    .exp .exps{
+        width: 95%;
+        justify-content: center;
+    }   
     .exp .Exps{
-        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }   
+    .exlist{
+        width: 100%;
+        justify-content: center;
     }
-    .exp .html{
-        width: 400px;
-    }
-    .exp .f1{
-        position: relative;
-        left: -20px;
-    }
+
 }
-@media only screen and (max-width: 671px){
-  
-    .exp .html{
-        width: 360px;
-    }
-    .exp .f1{
-        position: relative;
-        left: -40px;
-    }
-}
-@media only screen and (max-width: 464px){
-    
-    .exp .html{
-        width: 270px;
-    }
-    .exp .f1{
-        position: relative;
-        left: -40px;
-    }
-};
+

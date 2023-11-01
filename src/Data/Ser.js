@@ -18,12 +18,7 @@ const Ser=[
       title:"Beautiful Code",
       desc:"Working on the way of writing code to make it better and clean readable for everyone."
     },
-     {
-      id:3,
-      icon:{DiCodeigniter},
-      title:"Fully Responsive",
-      desc:"  I design my websites to be responsive and work on different devices properly."
-    },
+
      {
       id:4,
       icon:{CgWebsite},
@@ -42,18 +37,8 @@ const Ser=[
       title:"Made with Love",
       desc:"Is it really open source if it's not made with love? Always be certain when you use our website."
     },
-    {
-      id:1,
-      icon:{FaCodeBranch},
-      title:"Web Development",
-      desc:"I do some reserches before I start the job. To choose the right way for the job."
-    },
-     {
-      id:2,
-      icon:{BsCodeSlash},
-      title:"Beautiful Code",
-      desc:"Working on the way of writing code to make it better and clean readable for everyone."
-    },
+  
+   
      {
       id:3,
       icon:{DiCodeigniter},
@@ -65,12 +50,6 @@ const Ser=[
       icon:{CgWebsite},
       title:"Quick Learner",
       desc:"I always ready to learn something new things and I have the ability of Quick learner."
-    },
-     {
-      id:5,
-      icon:{MdOutlineCode},
-      title:"Online",
-      desc:"I am always available and easy to reach."
     },
      {
       id:6,

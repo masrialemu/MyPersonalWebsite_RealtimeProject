@@ -6,15 +6,14 @@ import Contact from '../Component/Body/Contact'
 import Expriance from '../Component/Body/Expriance'
 import Portfolio from '../Component/Body/Portfolio'
 import Service from '../Component/Body/Service'
-function Body({e}) {
+function Body() {
   return (
     <div className='bodyy' style={{backgroundColor: "aliceblue"}}>
-      
-      <About e={e}/>
-      <AboutDT e={e}/>
-      <Expriance e={e}/>
+      <About />
+      <AboutDT />
+      <Expriance />
       <Portfolio />
-      <Service e={e}/>
+      <Service />
       <Contact/>
     </div>
   )
