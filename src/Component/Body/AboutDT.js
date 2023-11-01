@@ -14,7 +14,7 @@ function AboutDT() {
   
     const fetchData = async () => {
       try {
-        const response = await axios.get('/get/info'); // Replace with your server URL
+        const response = await axios.get('https://my-website-back-end.onrender.com/get/info'); // Replace with your server URL
         setSkills(response.data);
       } catch (error) {
         console.error(error);
@@ -33,7 +33,7 @@ function AboutDT() {
     <div className="lists">
     <div className='ff'>
     {skills.map((skill) => (
-    <span className='nn' key={skill._id}><span className='nm'><AiOutlineRight style={{margin:'3px'}} /> {skill.name}:</span> {skill.value}
+    <span className='nn xc' key={skill._id}><span className='nm'><AiOutlineRight style={{margin:'0px'}} /> {skill.name}:</span> {skill.value}
    {
     token ? <AiFillDelete
     className='byy'

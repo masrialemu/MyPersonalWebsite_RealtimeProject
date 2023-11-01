@@ -6,15 +6,13 @@ import LoadingPage from '../Component/Load/Loading'
 import axios from 'axios'
 
 function Home() {
-  const [data,setData]=useState([])
   const [load,setLoad]=useState(true) 
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
         try {
-            const response = await axios.get('/get/project');
-            setProjects(response.data);
+            const response = await axios.get('https://my-website-back-end.onrender.com/get/project');
             setLoad(false)
         } catch (error) {
             console.error(error);

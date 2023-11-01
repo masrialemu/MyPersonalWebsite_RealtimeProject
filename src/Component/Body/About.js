@@ -9,7 +9,7 @@ function About({e}) {
     
     const fetchData = async () => {
       try {
-        const response = await axios.get('/get/content'); // Replace with your server URL
+        const response = await axios.get('https://my-website-back-end.onrender.com/get/content'); // Replace with your server URL
        setSkills(response.data)
        console.log(response.data)
       } catch (error) {

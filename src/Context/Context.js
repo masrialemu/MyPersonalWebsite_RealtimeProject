@@ -35,7 +35,7 @@ const autoLogoutTime = 24 * 60 * 60 * 1000; // 24 hours
   
 
   const handleDelete = (id) => {
-    axios.delete(`/delete/info/${id}`, {
+    axios.delete(`https://my-website-back-end.onrender.com/delete/info/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       },

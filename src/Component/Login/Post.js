@@ -33,7 +33,7 @@ function Post() {
     const fetchData = async () => {
       try {
         // Fetch data for the specific content using Axios
-        const response = await axios.get(`/get/content/1`);
+        const response = await axios.get(`https://my-website-back-end.onrender.com/get/content/1`);
         const contentData = response.data;
 
         // Populate the state with the fetched data
@@ -65,7 +65,7 @@ function Post() {
     }
   
     try {
-      const response = await axios.post('/post/project', formData, {
+      const response = await axios.post('https://my-website-back-end.onrender.com/post/project', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`,
@@ -91,7 +91,7 @@ function Post() {
 
     try {
       // Send a POST request to your server to add a new skill
-      const response = await axios.post('/post/skill', skillData, {
+      const response = await axios.post('https://my-website-back-end.onrender.com/post/skill', skillData, {
         headers: {
           'Authorization': `Bearer ${token}`, // Include the authentication token
         },
@@ -122,7 +122,7 @@ function Post() {
       }
 
       // Make a PUT request to update the content
-      const response = await axios.put(`/edit/content/${id}`, formData, {
+      const response = await axios.put(`https://my-website-back-end.onrender.com/edit/content/${id}`, formData, {
         headers: {
           'Authorization': `Bearer ${token}`, // Include the authentication token
         },
@@ -148,7 +148,7 @@ function Post() {
   
       try {
         // Send a POST request to your server to add new contact information
-        const response = await axios.post('/post/info', contactData, {
+        const response = await axios.post('https://my-website-back-end.onrender.com/post/info', contactData, {
           headers: {
             'Authorization': `Bearer ${token}`, // Include the authentication token
           },

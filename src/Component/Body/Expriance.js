@@ -11,7 +11,7 @@ function Expriance({e}) {
   useEffect(() => {
     async function fetchSkills() {
       try {
-        const response = await axios.get('/get/skill');
+        const response = await axios.get('https://my-website-back-end.onrender.com/get/skill');
         setSkills(response.data);
       } catch (error) {
         console.error(error);
@@ -23,7 +23,7 @@ function Expriance({e}) {
  
   const handleDelete2 = (id) => {
     // Make an HTTP DELETE request to delete the item
-    axios.delete(`/delete/skill/${id}`, {
+    axios.delete(`https://my-website-back-end.onrender.com/delete/skill/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       },

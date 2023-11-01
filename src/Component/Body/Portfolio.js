@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import IMG from '../../Img/best.jpg';
 import './Portfolio.css';
-import Data from '../../Data/List';
 import axios from 'axios';
 import { AiFillDelete} from "react-icons/ai";
 import { Link } from 'react-router-dom';
@@ -15,7 +13,7 @@ function Portfolio() {
   useEffect(() => {
     const fetchData = async () => {
         try {
-            const response = await axios.get('/get/project');
+            const response = await axios.get('https://my-website-back-end.onrender.com/get/project');
             setProjects(response.data);
         } catch (error) {
             console.error(error);
@@ -27,7 +25,7 @@ function Portfolio() {
 
 const handleDelete1 = async (id) => {
   try {
-    const response = await axios.delete(`/delete/project/${id}`, {
+    const response = await axios.delete(`https://my-website-back-end.onrender.com/delete/project/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       },

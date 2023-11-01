@@ -38,7 +38,7 @@ function Contact() {
         setHide(false)
         setLoading(false)
       }else{
-       const res=await axios.post('/mail', { email, title, description })
+       const res=await axios.post('https://my-website-back-end.onrender.com/mail', { email, title, description })
       if(res.data){
         setShow(true)
         setHide(false)

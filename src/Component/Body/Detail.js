@@ -14,7 +14,7 @@ function Detail() {
   useEffect(() => {
     const fetchData = async () => {
         try {
-            const response = await axios.get('/related/project');
+            const response = await axios.get('https://my-website-back-end.onrender.com/related/project');
             setProjects(response.data);
         } catch (error) {
             console.error(error);
@@ -28,7 +28,7 @@ function Detail() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`/get/project/${id}`);
+        const response = await axios.get(`https://my-website-back-end.onrender.com/get/project/${id}`);
         setProject(response.data);
         console.log(response.data)
       } catch (error) {
