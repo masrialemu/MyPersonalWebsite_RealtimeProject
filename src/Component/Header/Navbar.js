@@ -85,7 +85,7 @@ const Navbar={
         <AiOutlineLogout onClick={logout} />
 
       ) : (
-        <a href="/login">
+        <a href="login">
           <AiOutlineUserAdd />
         </a>
       )}
