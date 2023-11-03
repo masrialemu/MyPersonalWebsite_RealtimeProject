@@ -76,9 +76,10 @@ const handleDelete1 = async (project) => {
                   <a href={project.live} target="_blank" rel="noopener noreferrer">
                     <button className='live'>Live</button>
                   </a>
-                  <Link to={`/project/${project._id}`}>
-                  <button className="live">Detail</button>
-                </Link>
+                  <a href={`/project/${project._id}`} target="_blank">
+                   <button className="live">Detail</button>
+                  </a>
+
        
                  {
                   token ?  <AiFillDelete className='byy'  onClick={()=>handleDelete1(project._id)} />
