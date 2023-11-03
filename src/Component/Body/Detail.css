@@ -93,8 +93,8 @@
 
 
 .detail #imagebox{
-    margin-top: 2%;
-    /* width: 40rem; */
+    margin-top: 10%;
+    border: 1px solid black;
     height: 70vh;
     max-width: 680px;
     width: 100%;
@@ -157,8 +157,21 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
 }
+.right .rights{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .right .rights:hover{
     transform: scale(1.01);
+}
+.right .tite {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .detail .descx{
     text-align: justify;
@@ -394,7 +407,7 @@
 }
     .right{
         margin-top: 7%;
-        width: 80%;
+        width: 100%;
         justify-content: center;
     }
     .bodyyc .detail{
@@ -443,9 +456,18 @@
 
 
 @media screen and (max-width: 700px) {
+    .right {
+        width: 100%;
+    }
+    .right .rightt {
+        width: 100%;
+    }
     .bodyyc .detail{
         width: 95%;
-        justify-content: center
+        justify-content: center;
+        }
+        .rightt .rights {
+            width: 100%;
         }
     }
 @media screen and (max-width: 600px) {  

@@ -80,7 +80,10 @@ function Detail() {
                 <a href={project.live} target="_blank" rel="noopener noreferrer">
                   <button className='live'>Live</button>
                 </a>
-              
+                <a href={project.video} target="_blank" rel="noopener noreferrer">
+                <button className='git'>Video</button>
+                </a>
+           
                {
                 token ?  <AiFillDelete className='byy' onClick={()=>handleDelete(project._id)} />
             :null
@@ -110,14 +113,14 @@ function Detail() {
             </div>
             <div className="rightt">
                {projects.map((project) => (
-                 <Link to={`/project/${project._id}`}>
+                 <a href={`/project/${project._id}`}>
                  <div className="rights" key={project._id}>
-                 <a href='detail/1'>
+                 <a href={`/project/${project._id}`}>
                    <img src={project.image} alt={project.title} />
                  </a>
                  <span className="tite">{project.title}</span>
                </div>
-                 </Link>
+                 </a>
   
                ))
                }

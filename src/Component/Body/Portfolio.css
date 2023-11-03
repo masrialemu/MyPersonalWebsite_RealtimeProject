@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 60%;
+    width: 70%;
     align-items: center;
     justify-content: center;
     height: auto;
@@ -49,19 +49,25 @@
     height: 400px;
     border-radius: 10px;
   }
- 
+ .port .byy {
+  width: 50px;
+  height: auto;
+ }
  
   .port .Ports .lport{
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .port .Ports .dit {
-
     background-color: #082032;
     color: white;
     align-items: center;
     border-radius: 20px;
     overflow-x: hidden;
-    height: 40px;
+    width: 95%;
+    height: 30px;
     display: flex;
     justify-content: space-between;
   }
@@ -75,8 +81,10 @@
   }
   
   .port .Ports .btn {
+    width: 94%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
   }
   
   .port .Ports {
@@ -88,9 +96,9 @@
   
   .port .Ports button {
     margin: 5px;
-    width: 100px;
-    height: 40px;
-    font-size: 20px;
+    width: 70px;
+    height: 30px;
+    font-size: 17px;
     background-color: #082032;
     color: white;
     cursor: pointer;
@@ -104,62 +112,23 @@
     color: #082032;
   }
   
-  @media only screen and (max-width: 1384px) {
-    .port .Ports img {
-      width: 380px;
-      height: 380px;
-    }
-  }
+
   
-  @media only screen and (max-width: 1316px) {
-    .port .Ports img {
-      width: 350px;
-      height: 350px;
-    }
-  }
-  
-  @media only screen and (max-width: 1216px) {
-    .port .Ports .dit {
-      width: 320px;
-    }
+  @media only screen and (max-width: 1120px) {
     .port .ports {
-      width: 80%;
-
-    }
-    .port .Ports button {
-      font-size: 17px;
-      width: 75px;
-      margin-left: 0px;
-    }
-    .port .Ports .btn {
-      width: 90%;
-    }
-    .port .Ports img {
-      width: 320px;
-      height: 320px;
+      width: 100%;
     }
   }
   
-  @media only screen and (max-width: 1113px) {
 
-  }
   
-  @media only screen and (max-width: 1052px) {
- 
-  }
-  
- 
-
 @media only screen and (max-width: 885px){
 
     .port .Ports {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .port .Ports .btn {
-      display: flex;
-     justify-content: center;
-    }
+   
     .port .Ports .lport {
       width: 100%;
       display: flex;
@@ -183,17 +152,11 @@
     }
     .port .Ports .dit{
       width: 25rem;
-      height: 70px;
+      height: 50px;
     }
     .port .Ports .btn {
-      width: 25rem;
+      
     
-    }
-    .port .Ports .btn button{
-      width: 100px;
-      height: 50px;
-      font-size: 20px;
-      font-weight: 600;
     }
     .port .Ports img {
       border-radius: 20px;
@@ -227,7 +190,6 @@
   }
   .port .Ports .dit{
     width: 90%;
-    height: 70px;
   }
   .port .Ports .btn {
     width: 80%;
@@ -254,17 +216,13 @@
     height: 50px;
   }
   .port .Ports .btn {
-    width: 100%;
-   
+    width: 90%;
   
   }
-  .port .Ports .btn button{
-    width: 90px;
-    font-size: 17px;
-  }
+ 
   .port .Ports img {
     border-radius: 20px;
-    width: 100%;
+    width: 95%;
     height: 350px;
   }
 }

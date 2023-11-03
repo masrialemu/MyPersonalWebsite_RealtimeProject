@@ -23,13 +23,12 @@ function Portfolio() {
     fetchData(); 
 }, []); // Empty dependency array, meaning it will run once when the component mounts
 
-const handleDelete1 = async (project) => {
-  // Display a confirmation dialog
-  const userConfirmed = window.confirm(`Are you sure you want to delete "${project.title}"?`);
+const handleDelete1 = async (id) => {
+  const userConfirmed = window.confirm(`Are you sure you want to delete"?`);
 
   if (userConfirmed) {
     try {
-      const response = await axios.delete(`https://my-website-back-end.onrender.com/delete/project/${project._id}`, {
+      const response = await axios.delete(`https://my-website-back-end.onrender.com/delete/project/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -79,7 +78,9 @@ const handleDelete1 = async (project) => {
                   <a href={`/project/${project._id}`} target="_blank">
                    <button className="live">Detail</button>
                   </a>
-
+                  <a href={project.video} target="_blank">
+                  <button className="live">Video</button>
+                 </a>
        
                  {
                   token ?  <AiFillDelete className='byy'  onClick={()=>handleDelete1(project._id)} />
