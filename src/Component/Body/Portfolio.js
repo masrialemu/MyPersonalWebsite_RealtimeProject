@@ -23,20 +23,31 @@ function Portfolio() {
     fetchData(); 
 }, []); // Empty dependency array, meaning it will run once when the component mounts
 
-const handleDelete1 = async (id) => {
-  try {
-    const response = await axios.delete(`https://my-website-back-end.onrender.com/delete/project/${id}`, {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-      },
-    });
-    console.log('project deleted successfully');
-    window.location.reload()
-  } catch (error) {
-    // Handle the error here
-    console.error('Error deleting item', error);
+const handleDelete1 = async (project) => {
+  // Display a confirmation dialog
+  const userConfirmed = window.confirm(`Are you sure you want to delete "${project.title}"?`);
+
+  if (userConfirmed) {
+    try {
+      const response = await axios.delete(`https://my-website-back-end.onrender.com/delete/project/${project._id}`, {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+      console.log('Project deleted successfully');
+      // You can handle redirection or other actions after successful deletion here
+      window.location.reload();
+    } catch (error) {
+      // Handle the error here
+      console.error('Error deleting project', error);
+    }
+  } else {
+    console.log('Deletion canceled by user');
+    // You can choose to do nothing or display a message to the user
   }
 };
+
+
 
 
   return (
@@ -45,10 +56,10 @@ const handleDelete1 = async (id) => {
         <div className="ports">
           <span>Portfolio</span>
           <h3>who I am</h3>
-         
-          {projects.map((project) => (
+
             <div className="Ports">
-           
+                    
+          {projects.map((project) => (
               <div className="lport" key={project._id}>
                 <div className="imgxx">
                   <img src={project.image} alt="Project" />
@@ -76,9 +87,9 @@ const handleDelete1 = async (id) => {
                 
                 </div>
               </div>
-           
+              ))}
           </div>
-          ))}
+         
 
         </div>
       </div>

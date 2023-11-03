@@ -18,6 +18,9 @@ function Post() {
   const [c3, setC3] = useState('');
   const [c4, setC4] = useState('');
   const [cv, setCv] = useState('');
+  const [hide,setHide]=useState(true)
+  const [show,setShow]=useState(true)
+  const [msg,setMsg]=useState('')
   const [desc1, setDesc1] = useState('');
   const userData = JSON.parse(localStorage.getItem("userData"));
   const token = userData ? userData.token : null;
@@ -42,7 +45,7 @@ function Post() {
         setC3(contentData.c3);
         setC4(contentData.c4);
         setCv(contentData.cv);
-        setDesc1(contentData.desc1);
+        setDesc1(contentData.desc);
 
         // Handle the 'image' field if it's a file (you'll need to handle it differently)
       } catch (error) {
@@ -73,10 +76,15 @@ function Post() {
       });
 
       if (response.status === 201) {
-        console.log('Data uploaded and saved.');
+        setMsg('Post is Successfully Uploaded')
+        setShow(true)
+        setHide(false)
         window.location.replace('/')
       }
     } catch (error) {
+      setMsg('Post is not Successfully Uploaded')
+      setShow(false)
+      setHide(false)
       console.error(error);
     }
   };
@@ -99,11 +107,15 @@ function Post() {
       });
 
       if (response.status === 201) {
-        console.log('Skill added successfully.');
-        window.location.replace('/')
+        setMsg('Skill is Successfully Uploaded')
+        setShow(true)
+        setHide(false)
 
       }
     } catch (error) {
+      setMsg('Post is Successfully Uploaded')
+      setShow(false)
+      setHide(false)
       console.error(error);
     }
   };
@@ -128,11 +140,15 @@ function Post() {
         },
       });
 
-      // Handle the response as needed (e.g., show a success message)
+      setMsg('Content is Successfully Edited')
+      setShow(true)
+      setHide(false)
       console.log('Content updated successfully:');
       window.location.replace('/')
     } catch (error) {
-      // Handle errors (e.g., show an error message)
+      setMsg('Content is not Successfully Edited')
+      setShow(false)
+      setHide(false)
       console.error('Content update failed:', error);
     }
   };
@@ -155,9 +171,15 @@ function Post() {
         });
   
         if (response.status === 201) {
+          setMsg('Information is Successfully Uploaded')
+          setShow(true)
+          setHide(false)
           console.log('Contact information added successfully.');
         }
       } catch (error) {
+        setMsg('Information is not Successfully Uploaded')
+        setShow(false)
+        setHide(false)
         console.error(error);
       }
     };
@@ -171,6 +193,8 @@ function Post() {
     <div>
       <main>
         <div className="containerx">
+        {!hide && <div className="cm">{show ? <div className='cm'><p>The {msg} </p></div>:<div className='cm1'><p>The {msg}</p></div>}</div>}
+
           <h1 className="post-title">Create a New Post</h1>
           <div>
           <select value={category} onChange={handleCategoryChange}>

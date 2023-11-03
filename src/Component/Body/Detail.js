@@ -40,22 +40,31 @@ function Detail() {
   }, [id]);
   
   const handleDelete = (id) => {
+  // Display a confirmation dialog
+  const userConfirmed = window.confirm('Are you sure you want to delete this item?');
 
-
+  if (userConfirmed) {
     // Make an HTTP DELETE request to delete the item
-    axios.delete('/delete/project', {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-      },
-    })
+    axios
+      .delete('/delete/project', {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      })
       .then((response) => {
-        console.log('Item deleted successfully');
+        window.location.replace('/');        // You can handle redirection or other actions after successful deletion here
       })
       .catch((error) => {
         // Handle the error here
         console.error('Error deleting item', error);
       });
-  };
+  } else {
+    console.log('Deletion canceled by user');
+    // You can choose to do nothing or display a message to the user
+  }
+};
+
+
   return (
     <div>
       <main className="bodyyc">

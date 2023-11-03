@@ -43,9 +43,9 @@ const Background={backgroundImage:`url(${IMG1})`  }
           </h3>
           </span></h1>  
           <h3>{e.c3}</h3>
-          <span className='ans'><h3 style={{color:"red"}}> 
+          <span className='ans'><h3 style={{color:"#082032"}} > 
           
-          <Typewriter
+          <Typewriter 
           options={{
             strings: ['html','css','javascript','react.js','node.js','express.js','mongoose','java','flask','mysqil','php','bootstrap','python','firebase','react-native'],
             autoStart: true,

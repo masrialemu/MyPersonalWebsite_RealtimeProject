@@ -453,4 +453,13 @@
         width: 95%;
         justify-content: center
         }
+        .detail #imagebox {
+            height: 500px;
+        } 
     }
+ @media screen and (max-width: 500px) {  
+    .detail #imagebox {
+        height: 450px;
+        background-color: gainsboro;
+    }      
+}

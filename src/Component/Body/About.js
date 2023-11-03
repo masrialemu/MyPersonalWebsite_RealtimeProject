@@ -39,7 +39,7 @@ function About({e}) {
             <div className="abouts">
          <div className="list">
          <div className="imgs">
-         <img src={e.image} alt={e.image}  className='imgh' />
+         <img src={e.image} alt={e.image}  className='imgh'  />
          </div>
          <div className="det">
          <div className="Text">

@@ -14,7 +14,7 @@
     cursor: pointer;
 }
 .exp .exps{
-    width: 80%;
+    width: 100%;
     height: auto;
     background-color: aliceblue;
     display: flex;
@@ -47,22 +47,26 @@
 }
 
 .exp .html{
-    width: 100%;
+    width: 80%;
     height: 10px;
     background-color: gainsboro;
     border-radius: 20px;
     display: flex;
     align-items: center;
+    
 }
 
 .exp .f1{
     width: 40%;
     margin: 10px;
+    height: 100px;
     color: #082032;
 }
 .exp .f1 h2{
-    font-size: 20px;
-    height: 35px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 .exlist{
     width: 100%;

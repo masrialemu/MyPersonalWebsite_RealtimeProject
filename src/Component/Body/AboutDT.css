@@ -20,24 +20,23 @@
     flex-wrap: nowrap;
     border-radius: 20px;
     border: 2px solid black;
-    width: 70%;
+    width: 90%;
     background-color:aliceblue;
     justify-content: center;
     justify-content: space-around;
 }
 .Dt .lists .ff{
-      width: 80%;
+      width: 100%;
       display: flex;
      flex-wrap: wrap;
-     justify-content: space-between;
+     justify-content: center;
      align-items: center;
      
 }
-.Dt .lists .ff .nn{
-  
-    width: 47%;
+
+.Dt .lists .ff .nx{
+    width: 40%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .Dt .lists .ss{
@@ -62,41 +61,59 @@
         font-size: 20px;
         margin: 7px;
     }
-    .Dt .lists .nm{
+    .Dt .lists .ff .nx{
+        width: 45%;
+      
+    }
+    .Dt .lists .nx{
         font-size: 20px;
         font-weight: 600;
     }
 }
-@media only screen and (max-width: 990px){
+
+@media only screen and (max-width: 900px){
+    
     .Dt .lists .ff{
         width: 100%;
+       justify-content: center;
     }
-    .Dt .lists span{
-        font-size: 20px;
-        margin: 5px;
+    .Dt .lists .ff .nx {
+        width: 80%;
     }
-    .Dt .lists .nm{
-        font-size: 20px;
-        font-weight: 600;
+    .Dt .lists{
+       flex-wrap: wrap;
+    }
+    .Dt .lists .ff span{
+        font-size: 35px;
+    }
+    .Dt .lists .ff{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .Dt .lists .ss{
+        display: flex;
+        flex-direction: column;
+    }
+    .Dt .lists .ss{
+        margin-left: 20px;
     }
 }
-@media only screen and (max-width: 845px){
-    .Dt .lists span{
-        font-size: 18px;
-        margin: 4px;
-    }
-    .Dt .lists .nm{
-        font-size: 18px;
-        font-weight: 600;
-    }
-}
+
 @media only screen and (max-width: 800px){
     
     .Dt .lists .ff{
         width: 100%;
+       
+    }
+    .Dt .lists .ff .nx {
+        width: 90%;
     }
     .Dt .lists{
        flex-wrap: wrap;
+    }
+    .Dt .lists .ff span{
+        font-size: 35px;
     }
     .Dt .lists .ff{
         
@@ -113,6 +130,7 @@
 }
 
 @media only screen and (max-width: 687px){
+   
     .Dt .lists{
         justify-content: flex-start;
         border: none;
@@ -122,8 +140,8 @@
     .Dt .lists{
        flex-wrap: nowrap;
     }
-    .Dt .lists .ff{
-        
+    .Dt .lists .ff span{
+        font-size: 30px;
     }
     .Dt .lists .ss{
         margin-right: 20px;
@@ -134,39 +152,36 @@
     .Dt .lists{
         justify-content: flex-start;
         border: none;
-        width: 80%;
         box-shadow: 0 0 5px 1px rgb(120, 206, 209);
     }
     .Dt .lists{
        flex-wrap: wrap;
     }
-    .Dt .lists .ff .nn{
-        width: 70%;
+    .Dt .lists .ff .nx{
+        width: 100%;
     }
     .Dt .lists .ss{
         position: relative;
         right: 20px;
     }
+    .Dt .lists .ff span {
+        font-size: 25px;
+    }
  
 }
 @media only screen and (max-width: 505px){
-
-    .Dt .lists span{
-        font-size: 20px;
-        margin: 2px;
+    .about .list img {
+        width: 97%;
     }
+    .Dt .lists {
+        width: 95%;
+    }
+  
     .Dt .lists .ff{
         height: auto;
     }
-    .Dt .lists .nm{
+    
 
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .Dt .lists .xc{
-        width: 100%;
-
-    }
 }
 @media only screen and (max-width: 460px){
     .Dt .lists{
@@ -175,24 +190,18 @@
         width: 98%;
         box-shadow: 0 0 5px 1px rgb(120, 206, 209);
     }
-    .Dt .lists span{
-      
-        font-size: 20px;
-        margin: 2px;
+    .Dt .lists .ff span {
+        font-size: 25px;
     }
-    .Dt .lists .nm{
-        font-size: 20px;
-        font-weight: 600;
-    }
+   
 }
 @media only screen and (max-width: 417px){
-    .Dt .lists span{
-        font-size: 20px;
-        margin: 2px;
+    .about .list img {
+        width: 100%;
+        height: 450px;
     }
-    .Dt .lists .nm{
+    .Dt .lists .ff span {
         font-size: 20px;
-        font-weight: 600;
     }
 }
 @media only screen and (max-width: 370px){
@@ -200,22 +209,6 @@
         font-size: 17px;
         font-weight: 600;
     };
-    /* .Dt .lists span{
-        font-size: 10px;
-        margin: 1px;
-    } */
-    /* .Dt .lists .nm{
-        font-size: 10px;
-        font-weight: 600;
-    } */
+  
 }
-/* @media only screen and (max-width: 695px){
-    .Dt .lists span{
-        font-size: 11px;
-        margin: 2px;
-    }
-    .Dt .lists .nm{
-        font-size: 11px;
-        font-weight: 600;
-    }
-} */
+  

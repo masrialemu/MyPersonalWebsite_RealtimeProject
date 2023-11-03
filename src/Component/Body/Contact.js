@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Contact.css'
 import {AiFillFacebook,AiFillGithub,AiOutlineTwitter,AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai"
 import {FaTelegram} from "react-icons/fa"
-import {Link} from 'react-router-dom'
 import axios from 'axios'
-import { css } from '@emotion/react';
 import ClipLoader from "react-spinners/ClipLoader";
 
 const override: CSSProperties = {
@@ -20,9 +18,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [status, setStatus] = useState("");
     const [hide,setHide]=useState(true)
-    const [err,setErr]=useState(true)
     const [show,setShow]=useState(true)
     const [loading,setLoading]=useState(false)
   const Action=()=>{
@@ -45,7 +41,8 @@ function Contact() {
         setLoading(false)
       }
       else{
-        setHide(false) && setShow(false)
+        setHide(false) 
+        setShow(false)
         setLoading(false)
       }
       setEmail("");
@@ -85,8 +82,10 @@ function Contact() {
   </div>
          
         <div className="box">
+          
            <form onSubmit={HandleSubmit}>
-          {!hide && <div className="cm">{show ? <div className='cm'><p>The Email is Successfully Sent</p></div>:<div className='cm1'><p>Please Fill in The Required Fields</p></div>}</div>}
+           {!hide && <div className="cm">{show ? <div className='cm'><p>The Email is Successfully Sent</p></div>:<div className='cm1'><p>Please Fill in The Required Fields</p></div>}</div>}
+
            <input style={{color:"black",fontSize:"14px"}} type="email" placeholder='please, Enter Your Email'
            value={email}
            onChange={(event) => setEmail(event.target.value)}  />

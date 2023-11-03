@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
-import { AiOutlineUserAdd,AiOutlineLogout,AiOutlineClose } from "react-icons/ai";
+import { AiOutlineUserAdd,AiOutlineLogout,AiOutlineClose,AiOutlineUnorderedList } from "react-icons/ai";
 import {Link} from 'react-router-dom'
+import { useUser } from '../../Context/Context'; // Import your UserContext
+
 function Navbar() {
+const { logout } = useUser();
 const [hide,setHide]=useState(true)
 const [hideX,setHideX]=useState(true)
 const [scroll,setScroll]=useState(false)
 const [size,setSize]=useState(window.innerWidth)
+const userData = JSON.parse(localStorage.getItem("userData"));
+const token = userData ? userData.token : null;
+
 const Show=()=>{
+
   setHide(p=>!p)
 }
 
@@ -35,6 +42,7 @@ useEffect(()=>{
     setHide(false)
    }
 },[size])
+
 
 const List={
     height:hide&&`${-2}px`,
@@ -69,12 +77,24 @@ const Navbar={
         <h3><a href="/home" className='link'>Service</a></h3>
         <h3><a href="/home" className='link' >Contact</a></h3>
         <h3><a href="/post" className='link' >Post</a></h3>
+        
         </div>
         <div className="btn">
           <div className="">
-          <h3 className='lg' ><a href="/login" ><AiOutlineUserAdd/></a></h3>
-          <h3 className='hd' onClick={Show}>{hide ?"=":"x"}</h3>
-          </div>        
+
+          <h3 className='lg'>
+      {token ? (
+
+        <AiOutlineLogout onClick={logout} />
+
+      ) : (
+        <a href="/login">
+          <AiOutlineUserAdd />
+        </a>
+      )}
+    </h3>
+    <h3 className='hd' onClick={Show}>{hide ?<AiOutlineUnorderedList/>:<AiOutlineClose/>}</h3>
+    </div>        
         </div>
       </div>
     </div>

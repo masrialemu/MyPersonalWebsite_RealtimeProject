@@ -173,7 +173,10 @@
         height: 45px;
     }
     .lg{
-        visibility: hidden;
+        visibility: visible;
+        position: relative;
+        right: 110%;
+        top: 65px;
         
     }   
     .hd{

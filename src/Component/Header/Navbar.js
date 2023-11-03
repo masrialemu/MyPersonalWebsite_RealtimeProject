@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
-import { AiOutlineUserAdd,AiOutlineLogout } from "react-icons/ai";
+import { AiOutlineUserAdd,AiOutlineLogout,AiOutlineClose,AiOutlineUnorderedList } from "react-icons/ai";
 import { useUser } from '../../Context/Context'; // Import your UserContext
 
 function Navbar() {
@@ -53,12 +53,6 @@ const Navbar={
  const li=document.querySelectorAll('link')
  const sec= document.querySelectorAll('a')
 
- const active=()=>{
-  let len=sec.length;
-  while(--len && window.screenY+97 <sec[len].offsetTop){}
-  li.forEach(ltx=>ltx.classList.remove('active'));
-  li[len].classList.add('active');
- }
  
 
   return (
@@ -85,12 +79,12 @@ const Navbar={
         <AiOutlineLogout onClick={logout} />
 
       ) : (
-        <a href="login">
+        <a href="/login">
           <AiOutlineUserAdd />
         </a>
       )}
     </h3>
-          <h3 className='hd' onClick={Show}>{hide ?"=":"x"}</h3>
+          <h3 className='hd' onClick={Show}>{hide ?<AiOutlineUnorderedList/>:<AiOutlineClose/>}</h3>
           </div>        
         </div>
       </div>

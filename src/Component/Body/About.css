@@ -58,7 +58,9 @@
     border-top-left-radius:50% ;
     width: 400px;
     height: 400px;
-    background-color: hsl(208, 100%, 95%);
+    margin-bottom: 100px;
+    background-color: white;
+    /* background-color: hsl(208, 100%, 95%); */
     border: 2px solid gray;
 }
 .about .list{
@@ -111,6 +113,7 @@
     width: 130px;
     height: 45px;
     font-size: 15px;
+    border-radius: 20px;
 }
 .about .list p{
     text-align: justify;
@@ -125,12 +128,16 @@
         color: black;
     }
     .about .list p{
+        width: 100%;
         font-size: 18px;
         margin-top: 20px;
     }
+    .about .list .det .text {
+        width: 90%;
+    }
     .abouts .text{
         margin-top: 20px;
-
+        width: 100%;
         top: 30px;
     }
     .abouts .mr{
@@ -215,22 +222,19 @@
         color: black;
     }
 }
+
+
 @media only screen and (max-width: 978px){
     .about .list img{
+      margin-bottom: 0;
+    }
+    .about .list img{
         width: 100%;
-        height: 600px;
+        height: 800px;
      
     }
-  
-   
-    .text{
-        width: 100%;
-    }
-    .abouts .list{
-        width: 100%;
-    }
-    .abouts{
-        width: 100%;
+    .about .list .det .text {
+        width: 95%;
     }
     
     .abouts .mr{
@@ -252,6 +256,7 @@
         margin-top: 0px;
     }
     .about .list .imgs{
+        width: 90%;
         display: flex;
         justify-content: center;
     }
@@ -260,13 +265,13 @@
         justify-content: center
     }
     .about .list p{
-        font-size: 20px;
+        font-size: 25px;
         overflow: hidden;
     }
     .about .list .det .btn button{
-        width: 130px;
-        height: 45px;
-        font-size: 15px;
+        width: 150px;
+        height: 50px;
+        font-size: 17px;
         margin: 10px;
   
     }
@@ -274,37 +279,21 @@
 }@media only screen and (max-width: 830px){
     .about .list img{
         width: 100%;
-        height: 600px;
+        height: 700px;
      
     }
-    .about .list p{
-        width:80%;
-        font-size: 20px;
-        overflow: hidden;
-    }
-    .abouts .list{
-        width: 98%;
-     
-       /* border: 2px solid black; */
-    }
-    .about .list .det .text{
-        justify-content: center;
-        width: 100%;
-    }
+    
+    
  
 }
 
 @media only screen and (max-width: 750px){
     .about .list img{
-        width: 90%;
+        width: 100%;
         height: 600px;
      
     }
-    .about .list p{
-        width:80%;
-        font-size: 20px;
-        overflow: hidden;
-    }
+    
     .abouts .list{
         width: 98%;
      
@@ -312,18 +301,9 @@
     }
     .about .list .det .text{
         justify-content: center;
-        width: 100%;
+        width: 95%;
     }
  
-}
-@media only screen and (max-width: 653px){
-   
-    .abouts .list{
-        width: 98%;
-    }
-   .abouts .text{
-    margin-top: 20px;
-   }
 }
 
 @media only screen and (max-width: 633px){

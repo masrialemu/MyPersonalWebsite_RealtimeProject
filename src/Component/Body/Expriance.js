@@ -22,20 +22,31 @@ function Expriance({e}) {
   }, []); // The empty dependency array ensures this runs once on component mount
  
   const handleDelete2 = (id) => {
-    // Make an HTTP DELETE request to delete the item
-    axios.delete(`https://my-website-back-end.onrender.com/delete/skill/${id}`, {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-      },
-    })
-      .then((response) => {
-        console.log('skill deleted successfully');
-      })
-      .catch((error) => {
-        // Handle the error here
-        console.error('Error deleting item', error);
-      });
+    // Display a confirmation dialog
+    const userConfirmed = window.confirm('Are you sure you want to delete this skill?');
+  
+    if (userConfirmed) {
+      // Make an HTTP DELETE request to delete the skill
+      axios
+        .delete(`https://my-website-back-end.onrender.com/delete/skill/${id}`, {
+          headers: {
+            'Authorization': `Bearer ${token}`,
+          },
+        })
+        .then((response) => {
+          window.location.reload();
+          // You can handle redirection or other actions after successful deletion here
+        })
+        .catch((error) => {
+          // Handle the error here
+          console.error('Error deleting skill', error);
+        });
+    } else {
+      console.log('Deletion canceled by user');
+      // You can choose to do nothing or display a message to the user
+    }
   };
+  
 
   return (
     <div>
@@ -54,7 +65,7 @@ function Expriance({e}) {
                   </div>
                  {
                   token ?
-                  <AiFillDelete onClick={handleDelete2(()=>skill._id)} className='byy' />
+                  <AiFillDelete onClick={()=>handleDelete2(skill._id)} className='byy' />
                   :null
                  }
                 </div>
